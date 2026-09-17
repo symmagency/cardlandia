@@ -29,6 +29,34 @@ $(document).ready(function () {
         }
     }
 
+
+    // Carrossel de produtos
+
+    var $slider = $('#listagemProdutos ul .flex-viewport > ul');
+
+    $slider.removeAttr('style');
+    $slider.find('li').removeAttr('style');
+
+    $slider.slick({
+        dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: false,
+                    dots: true
+                }
+                }
+            ]
+    });
+
+
     // Cabeçalho desktop
     if (isDesktop) {
         runDeferred(function () {
@@ -1034,32 +1062,6 @@ $(document).ready(function () {
             </div>
         `);
     
-    });
-
-    // Carrossel de produtos
-
-    var $slider = $('#listagemProdutos ul .flex-viewport > ul');
-
-    $slider.removeAttr('style');
-    $slider.find('li').removeAttr('style');
-
-    $slider.slick({
-        dots: false,
-            infinite: false,
-            speed: 300,
-            slidesToShow: 6,
-            slidesToScroll: 1,
-            responsive: [
-                {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    infinite: false,
-                    dots: true
-                }
-                }
-            ]
     });
 
 });
