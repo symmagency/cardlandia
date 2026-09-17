@@ -85,13 +85,7 @@ $(document).ready(function () {
 
             $('.conteudo-topo .inferior .span8.busca-mobile').after(
                 '<div class="login-top">' +
-                '<a href="../conta/criar?next=conta_index&email=_"><span class="login-txt"><strong>Cadastre-se</strong></span></a>' +
-                '</div>'
-            );
-
-            $('.conteudo-topo .inferior .span8.busca-mobile').after(
-                '<div class="atd-top">' +
-                '<a href="../conta/login"><span class="atd-txt"><strong>Login</strong></span></a>' +
+                '<a href="../conta/login"><span class="login-txt"><strong>Login / Cadastre-se</strong></span></a>' +
                 '</div>'
             );
 
