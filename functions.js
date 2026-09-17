@@ -1019,6 +1019,8 @@ $(document).ready(function () {
         $('.surprise-box').before($('.embalagem'));
     }
 
+    // Barra de promoção inicial
+
     $(function () {
 
         const promoImage = 'https://cdn.awsli.com.br/2727/2727537/arquivos/header_promo_bar.png';
@@ -1031,6 +1033,49 @@ $(document).ready(function () {
                 </a>
             </div>
         `);
+    
+    });
+
+    // Carrossel de produtos
+
+    $(function () {
+
+        function configurarLicencas() {
+    
+            $('.atributo-item').each(function () {
+                const $item = $(this);
+                const variacao = ($item.attr('data-variacao-nome') || '')
+                    .trim()
+                    .toLowerCase();
+    
+                $item.removeClass('primaria secundaria');
+    
+                if (variacao.includes('primária') || variacao.includes('primaria')) {
+                    $item.addClass('primaria');
+                }
+    
+                if (variacao.includes('secundária') || variacao.includes('secundaria')) {
+                    $item.addClass('secundaria');
+                }
+            });
+    
+            const $primaria = $('.atributo-item.primaria');
+    
+            if ($primaria.length && !$primaria.closest('li').hasClass('active')) {
+                $primaria.trigger('click');
+            }
+        }
+    
+        configurarLicencas();
+    
+        const observer = new MutationObserver(function () {
+            configurarLicencas();
+        });
+    
+        observer.observe(document.querySelector('.atributos'), {
+            childList: true,
+            subtree: true
+        });
     
     });
 
