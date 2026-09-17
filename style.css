@@ -7573,10 +7573,6 @@ div#blog {
         top: 60px;
     }
 
-    .pagina-produto .listagem .span3 .imagem-produto,
-    .listagem .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
-        height: 96px !important;
-    }
 
     .pagina-produto .produto .span6:first-child {
         width: 63%;
