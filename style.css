@@ -4697,7 +4697,7 @@ form#formCalcularFrete {
 
 @media screen and (max-width: 768px) {
     #cabecalho {
-        margin: -10px -10px 10px;
+        margin: 0;
     }
 }
 
@@ -5364,10 +5364,6 @@ select {
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-
-    .conteiner-principal {
-        padding: 10px;
     }
 
     .pagina-carrinho .acao-editar>.span12 .botao {

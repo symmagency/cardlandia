@@ -255,28 +255,28 @@ $(document).ready(function () {
 
             $('#cabecalho>.conteiner>.row-fluid>.span3 > .fundo-principal').before(
                 `<div class="busca_topo">
-<a >
-Busca
-</a>
-</div>
-<div class="login-top">
-<a href="../conta/index">
-Login
-</a>
-</div>`
+                <a >
+                Busca
+                </a>
+                </div>
+                <div class="login-top">
+                <a href="../conta/index">
+                Login
+                </a>
+                </div>`
             );
 
             $('#cabecalho>.conteiner>.row-fluid>.span6 > .fundo-principal').before(
                 `<div class="busca_topo">
-<a >
-Busca
-</a>
-</div>
-<div class="login-top">
-<a href="../conta/index">
-Login
-</a>
-</div>`
+                <a >
+                Busca
+                </a>
+                </div>
+                <div class="login-top">
+                <a href="../conta/index">
+                Login
+                </a>
+                </div>`
             );
 
             $('#cabecalho>.conteiner>.row-fluid>.span3 > .fundo-principal').append($('.conteudo-topo .inferior .span4.hidden-phone .carrinho>a strong'));
