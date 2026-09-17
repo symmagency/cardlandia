@@ -8375,3 +8375,85 @@ body {
 }
 
 }
+
+/* Ajustes gerais da vitrine da página inicial */
+
+.listagem-item .acoes-produto {
+    border: 0;
+    background: var(--color-white);
+    padding: 12px;
+    display: flex;
+    gap: 4px;
+ }
+ 
+ .listagem-item .acoes-produto:after {
+    display: none;
+ }
+ 
+ .listagem-item:hover .acoes-produto {
+    bottom: 0;
+ }
+ 
+ .listagem-linha .slick-track,
+ .listagem-linha li.slick-slide {
+    display: flex!important;
+    border: 0;
+ }
+ 
+ .pagina-inicial #corpo > .conteiner {
+    max-width: 100%;
+    padding: 0;
+ }
+ 
+ .listagem .produtos-carrossel .listagem-linha.flexslider {
+    max-width: 1440px;
+    margin: 0 auto!important;
+    width: 100%;
+    padding-top: 6px;
+ }
+ 
+ .pagina-inicial ul.slick-initialized.slick-slider {
+    width: 100% !important;
+    margin: 0;
+ }
+ 
+ .listagem ul.flex-direction-nav {
+    display: none;
+ }
+ 
+ .slick-slider .slick-prev {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    left: -40px;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background: var(--icon-chev-left-black) center no-repeat;
+    background-size: 100%;
+    text-indent: -99999px;
+ }
+ 
+ .slick-slider .slick-next {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    right: -40px;
+    z-index: 10;
+      width: 40px;
+    height: 40px;
+    background: var(--icon-chev-right-black) center no-repeat;
+    background-size: 100%;
+    text-indent: -99999px;
+ }
+ 
+ .listagem-linha > .flex-viewport {
+    overflow: initial !important;
+    max-height: fit-content;
+ }
+ 
+ #listagemProdutos .slick-list.draggable {
+    margin-left: -12px;
+    margin-right: -12px;
+ }
+ 

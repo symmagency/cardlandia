@@ -1038,45 +1038,28 @@ $(document).ready(function () {
 
     // Carrossel de produtos
 
-    $(function () {
+    var $slider = $('#listagemProdutos ul .flex-viewport > ul');
 
-        function configurarLicencas() {
-    
-            $('.atributo-item').each(function () {
-                const $item = $(this);
-                const variacao = ($item.attr('data-variacao-nome') || '')
-                    .trim()
-                    .toLowerCase();
-    
-                $item.removeClass('primaria secundaria');
-    
-                if (variacao.includes('primária') || variacao.includes('primaria')) {
-                    $item.addClass('primaria');
+    $slider.removeAttr('style');
+    $slider.find('li').removeAttr('style');
+
+    $slider.slick({
+        dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: false,
+                    dots: true
                 }
-    
-                if (variacao.includes('secundária') || variacao.includes('secundaria')) {
-                    $item.addClass('secundaria');
                 }
-            });
-    
-            const $primaria = $('.atributo-item.primaria');
-    
-            if ($primaria.length && !$primaria.closest('li').hasClass('active')) {
-                $primaria.trigger('click');
-            }
-        }
-    
-        configurarLicencas();
-    
-        const observer = new MutationObserver(function () {
-            configurarLicencas();
-        });
-    
-        observer.observe(document.querySelector('.atributos'), {
-            childList: true,
-            subtree: true
-        });
-    
+            ]
     });
 
 });
