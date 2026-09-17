@@ -1019,6 +1019,21 @@ $(document).ready(function () {
         $('.surprise-box').before($('.embalagem'));
     }
 
+    $(function () {
+
+        const promoImage = 'https://cdn.awsli.com.br/2727/2727537/arquivos/header_promo_bar.png';
+        const promoLink = '#';
+    
+        $('#cabecalho').before(`
+            <div class="promo-bar">
+                <a href="${promoLink}">
+                    <img src="${promoImage}" alt="Promoção">
+                </a>
+            </div>
+        `);
+    
+    });
+
 });
 
 // =====================================================

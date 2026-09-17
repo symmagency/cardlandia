@@ -8351,3 +8351,31 @@ body {
 .pagina-produto .tab-content:not(:has(#descricao)) {
     display: none;
 }
+
+/* Promo bar */
+
+.promo-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #03e3fb;
+}
+
+@media screen and (max-width: 768px) {
+
+.promo-bar {
+    overflow: hidden;
+    height: 48px;
+}
+
+.promo-bar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo-bar a img {
+    max-width: 1800px;
+}
+
+}
