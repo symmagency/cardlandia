@@ -8397,7 +8397,7 @@ body {
      * item do grupo 1 e o primeiro do grupo 2
      * ficar igual ao restante.
      */
-    padding: 0 18px 0 0;
+    padding: 0;
 
     list-style: none;
 
@@ -8566,3 +8566,24 @@ body {
     }
 
 }
+
+.explore_carousel:before {
+    content: "";
+    width: 99px;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #1C1D20 0%, rgba(28, 29, 32, 0) 100%);
+    z-index: 10;
+}
+
+.explore_carousel:after {
+    content: "";
+    width: 99px;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #1C1D20 0%, rgba(28, 29, 32, 0) 100%);
+    z-index: 10;
+}
+
