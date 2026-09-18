@@ -1292,6 +1292,7 @@ ul.drop-login li:last-child {
 #explore .conteiner {
     max-width: 1440px;
     padding: 0;
+    overflow: hidden;
 }
 
 #explore .append_items {
@@ -8361,10 +8362,10 @@ body {
 .explore_items {
     display: flex;
     width: max-content;
-
     animation: explore-scroll 35s linear infinite;
-
     will-change: transform;
+    margin: 0;
+    gap: 20px;
 }
 
 
