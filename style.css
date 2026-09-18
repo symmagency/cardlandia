@@ -305,11 +305,11 @@ img {
     justify-content: center;
     align-items: center;
     font-weight: 500;
-    height: 46px;
+    height: 56px;
 }
 
 .login-txt strong {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
 }
 
@@ -400,13 +400,13 @@ img {
     padding: 0 24px;
 }
 
-.login-top a:after {
+.login-top a:before {
     content: "";
     width: 24px;
     height: 24px;
     display: block;
     z-index: 1000;
-    background: url(https://cdn.awsli.com.br/2679/2679412/arquivos/how_to_reg.svg) no-repeat center;
+    background: url(https://symmagency.github.io/cardlandia/assets/icones/user.svg) no-repeat center;
     margin-left: 8px;
 }
 
@@ -691,7 +691,7 @@ ul.drop-login li:last-child {
     height: 24px;
     display: block;
     z-index: 1000;
-    background: url(https://cdn.awsli.com.br/2679/2679412/arquivos/shopping_bag.svg) no-repeat center;
+    background: url(https://symmagency.github.io/cardlandia/assets/icones/cart.svg) no-repeat center;
 }
 
 .carrinho>a strong {
@@ -844,7 +844,7 @@ ul.drop-login li:last-child {
 
 .busca button:before {
     content: "";
-    background: url(https://cdn.awsli.com.br/2679/2679412/arquivos/search.svg) center no-repeat;
+    background: url(https://symmagency.github.io/cardlandia/assets/icones/search.svg) center no-repeat;
     width: 18px;
     height: 18px;
 }
@@ -4686,7 +4686,6 @@ form#formCalcularFrete {
     padding: 0;
     border-bottom: 2px solid #303138;
     background: #222328;
-    border-top: 4px solid #FFA800;
     display: block;
 }
 
