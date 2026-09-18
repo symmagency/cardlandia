@@ -8351,6 +8351,7 @@ body {
 .explore_carousel {
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 
@@ -8575,6 +8576,7 @@ body {
     height: 100%;
     background: linear-gradient(90deg, #1C1D20 0%, rgba(28, 29, 32, 0) 100%);
     z-index: 10;
+    top: 0;
 }
 
 .explore_carousel:after {
@@ -8583,7 +8585,8 @@ body {
     position: absolute;
     right: 0;
     height: 100%;
-    background: linear-gradient(90deg, #1C1D20 0%, rgba(28, 29, 32, 0) 100%);
+    background: linear-gradient(270deg, #1C1D20 0%, rgba(28, 29, 32, 0) 100%);
     z-index: 10;
+    top: 0;
 }
 
