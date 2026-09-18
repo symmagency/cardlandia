@@ -8593,3 +8593,21 @@ body {
 }
 
 }
+
+#home-banners-grid .conteiner {
+    max-width: 1440px;
+}
+
+.home-banners-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px
+}
+
+@media screen and (max-width: 768px) {
+
+.home-banners-list {
+    grid-template-columns: 1fr 1fr;
+}
+    
+}

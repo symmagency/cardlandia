@@ -35,34 +35,42 @@ $(document).ready(function () {
     
             inserirDepoisDe: '.pagina-inicial .secao-banners',
     
+            baseUrl: 'https://symmagency.github.io/cardlandia/assets/banners/',
+    
             banners: [
                 {
-                    imagem: 'https://symmagency.github.io/cardlandia/assets/banners/google-play.png',
+                    imagem: 'apple.png',
+                    imagemMobile: 'apple-m.png',
+                    link: '/app-store',
+                    alt: 'Apple'
+                },
+                {
+                    imagem: 'google-play.png',
+                    imagemMobile: 'google-play-m.png',
                     link: '/google-play',
                     alt: 'Google Play'
                 },
                 {
-                    imagem: 'https://symmagency.github.io/cardlandia/assets/banners/playstation.png',
+                    imagem: 'playstation.png',
+                    imagemMobile: 'playstation-m.png',
                     link: '/gift-playstation',
                     alt: 'PlayStation'
                 },
                 {
-                    imagem: 'https://symmagency.github.io/cardlandia/assets/banners/razer-gold.png',
+                    imagem: 'razer-gold.png',
+                    imagemMobile: 'razer-gold-m.png',
                     link: '/buscar?q=razer+gold',
                     alt: 'Razer Gold'
                 },
                 {
-                    imagem: 'https://symmagency.github.io/cardlandia/assets/banners/steam-1.png',
+                    imagem: 'steam.png',
+                    imagemMobile: 'steam-m.png',
                     link: '/pc-',
                     alt: 'Steam'
                 },
                 {
-                    imagem: 'https://symmagency.github.io/cardlandia/assets/banners/steam.png',
-                    link: '/pc-',
-                    alt: 'Steam'
-                },
-                {
-                    imagem: 'https://symmagency.github.io/cardlandia/assets/banners/xbox.png',
+                    imagem: 'xbox.png',
+                    imagemMobile: 'xbox-m.png',
                     link: '/gift-xbox',
                     alt: 'Xbox'
                 }
@@ -85,11 +93,20 @@ $(document).ready(function () {
                             title="${banner.alt}"
                         >
     
-                            <img
-                                src="${banner.imagem}"
-                                alt="${banner.alt}"
-                                loading="lazy"
-                            >
+                            <picture>
+    
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="${bannerConfig.baseUrl}${banner.imagemMobile}"
+                                >
+    
+                                <img
+                                    src="${bannerConfig.baseUrl}${banner.imagem}"
+                                    alt="${banner.alt}"
+                                    loading="lazy"
+                                >
+    
+                            </picture>
     
                         </a>
     
