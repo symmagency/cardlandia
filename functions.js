@@ -657,7 +657,6 @@ $(document).ready(function () {
     
         }
     
-    });
     
 
     if (!$('.videoTrailer').length && $('#listagemProdutos .vitrine-3332079').length) {
