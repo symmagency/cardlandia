@@ -8347,37 +8347,41 @@ body {
 }
 
 
-/* Área visível do carrossel
-========================================== */
-
+/* Área visível */
 .explore_carousel {
     width: 100%;
     overflow: hidden;
 }
 
 
-/* Track que vai se movimentar
+/* ==========================================
+   TRACK
 ========================================== */
 
 .explore_items {
     display: flex;
     width: max-content;
-    animation: explore-scroll 35s linear infinite;
-    will-change: transform;
+
+    /* IMPORTANTE: sem gap aqui */
+    gap: 0;
+
     margin: 0;
-    gap: 20px;
+    padding: 0;
+
+    animation: explore-scroll 35s linear infinite;
+
+    will-change: transform;
 }
 
 
-/* Pausa ao passar o mouse
-========================================== */
-
+/* Pausa ao passar o mouse */
 .explore_items:hover {
     animation-play-state: paused;
 }
 
 
-/* Cada grupo precisa ser idêntico
+/* ==========================================
+   GRUPOS
 ========================================== */
 
 .explore_group {
@@ -8387,21 +8391,30 @@ body {
     gap: 18px;
 
     margin: 0;
+
+    /*
+     * Esse espaço faz a distância entre o último
+     * item do grupo 1 e o primeiro do grupo 2
+     * ficar igual ao restante.
+     */
     padding: 0 18px 0 0;
 
     list-style: none;
 
     flex-shrink: 0;
+
+    box-sizing: border-box;
 }
 
 
-/* Card
+/* ==========================================
+   CARD
 ========================================== */
 
 .explore_item {
-    flex: 0 0 118px;
+    flex: 0 0 120px;
 
-    width: 118px;
+    width: 120px;
     height: 92px;
 
     margin: 0;
@@ -8409,15 +8422,14 @@ body {
 }
 
 
-/* Link
-========================================== */
-
+/* Link */
 .explore_item > a {
-    width: 100%;
+    width: 120px;
     height: 100%;
 
     display: flex;
     flex-direction: column;
+
     align-items: center;
     justify-content: center;
 
@@ -8441,11 +8453,13 @@ body {
 
 .explore_item > a:hover {
     background: #303135;
+
     transform: translateY(-2px);
 }
 
 
-/* Ícone
+/* ==========================================
+   ÍCONE
 ========================================== */
 
 .explore_icon {
@@ -8455,7 +8469,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 
 .explore_icon img {
     display: block;
@@ -8467,7 +8480,8 @@ body {
 }
 
 
-/* Texto
+/* ==========================================
+   TEXTO
 ========================================== */
 
 .explore_text {
@@ -8480,22 +8494,23 @@ body {
     line-height: 1;
 
     text-align: center;
+
     white-space: nowrap;
 }
 
 
 /* ==========================================
-   ANIMAÇÃO
+   ANIMAÇÃO INFINITA
 ========================================== */
 
 @keyframes explore-scroll {
 
     from {
-        transform: translateX(0);
+        transform: translate3d(0, 0, 0);
     }
 
     to {
-        transform: translateX(-50%);
+        transform: translate3d(-50%, 0, 0);
     }
 
 }
@@ -8512,11 +8527,6 @@ body {
     }
 
     .explore_items {
-        /*
-         * No mobile deixei manual.
-         * Se quiser automático no mobile também,
-         * basta remover animation: none.
-         */
         animation: none;
     }
 
@@ -8533,10 +8543,6 @@ body {
         display: none;
     }
 
-    /*
-     * Esconde a cópia porque no mobile
-     * não precisamos dela.
-     */
     .explore_group:nth-child(2) {
         display: none;
     }
@@ -8549,19 +8555,14 @@ body {
     }
 
     .explore_item {
-        flex-basis: 110px;
+        flex: 0 0 110px;
 
         width: 110px;
         height: 88px;
     }
 
-}
-
-@media screen and (min-width: 768px) {
-    #explore .explore_item a {
-        width: 120px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .explore_item > a {
+        width: 110px;
     }
+
 }

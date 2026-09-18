@@ -599,7 +599,7 @@ $(document).ready(function () {
                 return `
                     <li class="explore_item">
                         <a href="${item.link}">
-                            
+    
                             <div class="explore_icon">
                                 <img
                                     src="${item.icone}"
@@ -623,14 +623,31 @@ $(document).ready(function () {
             // ==========================================
     
             $('.pagina-inicial .secao-banners').after(`
-                
+    
                 <section id="explore">
     
                     <div class="conteiner">
     
-                        <ul class="explore_items">
-                            ${itemsHTML}
-                        </ul>
+                        <div class="explore_carousel">
+    
+                            <div class="explore_items">
+    
+                                <!-- Grupo original -->
+                                <ul class="explore_group">
+                                    ${itemsHTML}
+                                </ul>
+    
+                                <!-- Grupo duplicado para criar o loop infinito -->
+                                <ul
+                                    class="explore_group"
+                                    aria-hidden="true"
+                                >
+                                    ${itemsHTML}
+                                </ul>
+    
+                            </div>
+    
+                        </div>
     
                     </div>
     
@@ -639,6 +656,8 @@ $(document).ready(function () {
             `);
     
         }
+    
+    });
     
 
     if (!$('.videoTrailer').length && $('#listagemProdutos .vitrine-3332079').length) {
