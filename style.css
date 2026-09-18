@@ -8568,6 +8568,8 @@ body {
 
 }
 
+@media screen and (min-width: 768px) {
+
 .explore_carousel:before {
     content: "";
     width: 99px;
@@ -8590,3 +8592,4 @@ body {
     top: 0;
 }
 
+}
