@@ -29,6 +29,98 @@ $(document).ready(function () {
         }
     }
 
+    runDeferred(function () {
+
+        const bannerConfig = {
+    
+            inserirDepoisDe: '.pagina-inicial .secao-banners',
+    
+            banners: [
+                {
+                    imagem: 'https://symmagency.github.io/cardlandia/assets/banners/google-play.png',
+                    link: '/google-play',
+                    alt: 'Google Play'
+                },
+                {
+                    imagem: 'https://symmagency.github.io/cardlandia/assets/banners/playstation.png',
+                    link: '/gift-playstation',
+                    alt: 'PlayStation'
+                },
+                {
+                    imagem: 'https://symmagency.github.io/cardlandia/assets/banners/razer-gold.png',
+                    link: '/buscar?q=razer+gold',
+                    alt: 'Razer Gold'
+                },
+                {
+                    imagem: 'https://symmagency.github.io/cardlandia/assets/banners/steam-1.png',
+                    link: '/pc-',
+                    alt: 'Steam'
+                },
+                {
+                    imagem: 'https://symmagency.github.io/cardlandia/assets/banners/steam.png',
+                    link: '/pc-',
+                    alt: 'Steam'
+                },
+                {
+                    imagem: 'https://symmagency.github.io/cardlandia/assets/banners/xbox.png',
+                    link: '/gift-xbox',
+                    alt: 'Xbox'
+                }
+            ]
+        };
+    
+    
+        if (
+            !$('#home-banners-grid').length &&
+            $(bannerConfig.inserirDepoisDe).length
+        ) {
+    
+            const bannersHTML = bannerConfig.banners.map(function(banner) {
+    
+                return `
+                    <div class="home-banner-item">
+    
+                        <a
+                            href="${banner.link}"
+                            title="${banner.alt}"
+                        >
+    
+                            <img
+                                src="${banner.imagem}"
+                                alt="${banner.alt}"
+                                loading="lazy"
+                            >
+    
+                        </a>
+    
+                    </div>
+                `;
+    
+            }).join('');
+    
+    
+            $(bannerConfig.inserirDepoisDe).after(`
+    
+                <section id="home-banners-grid">
+    
+                    <div class="conteiner">
+    
+                        <div class="home-banners-list">
+    
+                            ${bannersHTML}
+    
+                        </div>
+    
+                    </div>
+    
+                </section>
+    
+            `);
+    
+        }
+    
+    });
+
 
     // Carrossel de produtos
 
