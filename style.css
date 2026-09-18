@@ -8335,6 +8335,15 @@ body {
     background-size: 100%;
     text-indent: -99999px;
  }
+
+ @media screen and (max-width: 768px) {
+
+    .slick-slider .slick-next,
+    .slick-slider .slick-prev {
+        display: none!important;
+    }
+
+ }
  
  .listagem-linha > .flex-viewport {
     overflow: initial !important;
