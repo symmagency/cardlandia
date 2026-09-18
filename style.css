@@ -712,7 +712,7 @@ ul.drop-login li:last-child {
     position: absolute;
     display: block !important;
     right: 6px;
-    background: --var(--cor-da-marca);
+    background: var(--cor-da-marca);
 }
 
 .carrinho>a {
@@ -5384,6 +5384,10 @@ select {
         padding: 0;
     }
 
+    .conteiner-principal .secao-banners .conteiner {
+        padding: 16px;
+    }
+
     .produto-compartilhar .lista-redes {
         display: none;
     }
@@ -5394,7 +5398,11 @@ select {
     }
 
     .banner.cheio .flex-control-nav {
-        display: block;
+        margin-top: 20px;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
     }
 
     .cat-list .cat-item,
@@ -7389,7 +7397,6 @@ div#blog {
 
     #explore .explore_item a {
         width: 120px;
-        display: block;
     }
 
     #explore .row-fluid {
@@ -7398,6 +7405,13 @@ div#blog {
 
     #explore {
         margin-top: 32px;
+    }
+
+    #explore .conteiner {
+        padding: 0 16px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
 }
@@ -8550,9 +8564,6 @@ body {
 
     .explore_group {
         gap: 12px;
-
-        padding-left: 15px;
-        padding-right: 15px;
     }
 
     .explore_item {
@@ -8594,6 +8605,8 @@ body {
 
 }
 
+/* Banners grid */
+
 #home-banners-grid .conteiner {
     max-width: 1440px;
 }
@@ -8602,6 +8615,12 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px
+    padding: 0 16px;
+}
+
+.home-banner-item a, .home-banner-item a picture, .home-banner-item img {
+    width: 100%;
+    display: block;
 }
 
 @media screen and (max-width: 768px) {

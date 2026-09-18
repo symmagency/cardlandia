@@ -573,36 +573,36 @@ $(document).ready(function () {
 
             // Construa o HTML com jQuery usando os dados das variáveis
             var $produtosHz = $(`
-    <div class="produtos_hz">
-        <div class="conteiner">
-            <div class="row-fluid">
-                <a href="#" class="titulo-categoria borda-principal cor-principal">
-                    <strong>Mais populares</strong>
-                </a>
-                <ul class="produtos_list"></ul>
-            </div>
-        </div>
-    </div>
-`);
+                <div class="produtos_hz">
+                    <div class="conteiner">
+                        <div class="row-fluid">
+                            <a href="#" class="titulo-categoria borda-principal cor-principal">
+                                <strong>Mais populares</strong>
+                            </a>
+                            <ul class="produtos_list"></ul>
+                        </div>
+                    </div>
+                </div>
+            `);
 
             $.each(produtosPopulares, function (index, produto) {
                 var $li = $(`
-        <li class="produto_item">
-            <a href="${produto.url}" target="_blank"></a>
-            <img src="${produto.img}" alt="">
-            <div class="append_title">
-                <div class="position">
-                    <span>${produto.posicao}</span>
-                    <img src="" alt="">
-                </div>
-                <span>${produto.titulo}</span>
-            </div>
-            <div class="produto_preco">
-                <strong>${produto.preco}</strong>
-                <span>${produto.desconto}</span>
-            </div>
-        </li>
-    `);
+                <li class="produto_item">
+                    <a href="${produto.url}" target="_blank"></a>
+                    <img src="${produto.img}" alt="">
+                    <div class="append_title">
+                        <div class="position">
+                            <span>${produto.posicao}</span>
+                            <img src="" alt="">
+                        </div>
+                        <span>${produto.titulo}</span>
+                    </div>
+                    <div class="produto_preco">
+                        <strong>${produto.preco}</strong>
+                        <span>${produto.desconto}</span>
+                    </div>
+                </li>
+            `);
                 $produtosHz.find('.produtos_list').append($li);
             });
 
