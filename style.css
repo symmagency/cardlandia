@@ -8614,7 +8614,7 @@ body {
 .home-banners-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px
+    gap: 20px;
     padding: 0 16px;
 }
 
@@ -8627,6 +8627,8 @@ body {
 
 .home-banners-list {
     grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 0 16px;
 }
     
 }
