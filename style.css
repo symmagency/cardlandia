@@ -264,6 +264,7 @@ img {
 
 .conteudo-topo .inferior {
     padding: 16px 0;
+    display: flex;
 }
 
 #cabecalho>.conteiner>.row-fluid {
@@ -354,7 +355,7 @@ img {
     align-items: center;
     width: 170px;
     padding: 0;
-    margin-left: 40px;
+    margin-left: auto;
 }
 
 .login-top .btn-group+.drop-login {
@@ -731,7 +732,7 @@ ul.drop-login li:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 40px;
+    margin-left: auto;
 }
 
 .carrinho>a i {
