@@ -72,6 +72,9 @@ button,
 
     /* Cor de botões */
     --cor-de-botoes: #0f7042;
+
+    /* Gradiente */
+    --gradiente: linear-gradient(270deg, #00E4FB 0%, #767AB3 100%);
 }
 
 body {
@@ -861,7 +864,7 @@ ul.drop-login li:last-child {
     color: #000;
     font-size: 26px;
     padding: 10px 20px;
-    background: linear-gradient(270deg, #00E4FB 0%, #767AB3 100%);
+    background: var(--gradiente);
     border-radius: 999px;
     height: 56px;
     width: 80px;
@@ -981,7 +984,7 @@ ul.drop-login li:last-child {
 
 .menu.superior .nivel-um>li:last-child {
     margin-left: auto;
-    background: #F64F4F;
+    background: var(--gradiente);
 }
 
 .menu.superior .nivel-um li:last-child .nivel-dois {
@@ -1038,19 +1041,7 @@ ul.drop-login li:last-child {
     padding: 0 24px;
     width: auto;
     transition: all .3s;
-}
-
-.menu.superior .nivel-um>li:after {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 20px;
-    background: #D9D9D920;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    border-right: 1px solid rgba(255, 255, 255, .1);
 }
 
 .menu.superior .nivel-um>li:last-child::after {
