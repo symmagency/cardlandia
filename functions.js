@@ -503,96 +503,147 @@ $(document).ready(function () {
     }
 
     runDeferred(function () {
+
         if (!$('#explore').length && $('.pagina-inicial .secao-banners').length) {
+    
+            // ==========================================
+            // CONFIGURAÇÃO DOS CARDS
+            // Altere texto, ícone e link somente aqui
+            // ==========================================
+    
+            const exploreItems = [
+                {
+                    texto: 'Ação',
+                    icone: 'https://symmagency.github.io/cardlandia/assets/icones/cat/icon-c-acao.svg',
+                    link: '/acao'
+                },
+                {
+                    texto: 'Aventura',
+                    icone: 'https://symmagency.github.io/cardlandia/assets/icones/cat/icon-c-aventura.svg',
+                    link: '/aventura'
+                },
+                {
+                    texto: 'Co-op',
+                    icone: 'https://symmagency.github.io/cardlandia/assets/icones/cat/icon-c-coop.svg',
+                    link: '/co-op'
+                },
+                {
+                    texto: 'Corrida',
+                    icone: 'https://symmagency.github.io/cardlandia/assets/icones/cat/icon-c-corrida.svg',
+                    link: '/corrida'
+                },
+                {
+                    texto: 'Esporte',
+                    icone: 'https://symmagency.github.io/cardlandia/assets/icones/cat/icon-c-esporte.svg',
+                    link: '/esporte'
+                },
+                {
+                    texto: 'Estratégia',
+                    icone: 'https://symmagency.github.io/cardlandia/assets/icones/cat/icon-c-estrategia.svg',
+                    link: '/estrategia'
+                },
+                {
+                    texto: 'FPS',
+                    icone: 'https://symmagency.github.io/cardlandia/assets/icones/cat/icon-c-fps.svg',
+                    link: '/fps'
+                },
+                {
+                    texto: 'Hack & Slash',
+                    icone: 'https://symmagency.github.io/cardlandia/assets/icones/cat/icon-c-slash.svg',
+                    link: '/hack-slash'
+                },
+                {
+                    texto: 'Indie',
+                    icone: 'https://symmagency.github.io/cardlandia/assets/icones/cat/icon-c-indie.svg',
+                    link: '/indie'
+                },
+                {
+                    texto: 'Luta',
+                    icone: 'https://symmagency.github.io/cardlandia/assets/icones/cat/icon-c-luta.svg',
+                    link: '/luta'
+                },
+                {
+                    texto: 'MMO',
+                    icone: 'https://symmagency.github.io/cardlandia/assets/icones/cat/icon-c-mmo.svg',
+                    link: '/mmo'
+                },
+                {
+                    texto: 'RPG',
+                    icone: 'https://symmagency.github.io/cardlandia/assets/icones/cat/icon-c-rpg.svg',
+                    link: '/rpg'
+                },
+                {
+                    texto: 'Simulação',
+                    icone: 'https://symmagency.github.io/cardlandia/assets/icones/cat/icon-c-simulacao.svg',
+                    link: '/simulacao'
+                },
+                {
+                    texto: 'Soulslike',
+                    icone: 'https://symmagency.github.io/cardlandia/assets/icones/cat/icon-c-soulslike.svg',
+                    link: '/soulslike'
+                },
+                {
+                    texto: 'Terror',
+                    icone: 'https://symmagency.github.io/cardlandia/assets/icones/cat/icon-c-terror.svg',
+                    link: '/terror'
+                }
+            ];
+    
+    
+            // ==========================================
+            // MONTA OS CARDS AUTOMATICAMENTE
+            // ==========================================
+    
+            const itemsHTML = exploreItems.map(function(item) {
+    
+                return `
+                    <li class="explore_item">
+                        <a href="${item.link}">
+                            
+                            <div class="explore_icon">
+                                <img
+                                    src="${item.icone}"
+                                    alt="${item.texto}"
+                                >
+                            </div>
+    
+                            <span class="explore_text">
+                                ${item.texto}
+                            </span>
+    
+                        </a>
+                    </li>
+                `;
+    
+            }).join('');
+    
+    
+            // ==========================================
+            // INSERE A SEÇÃO
+            // ==========================================
+    
             $('.pagina-inicial .secao-banners').after(`
-
-    <div id="explore">
+                
+                <section id="explore">
     
-    <div class="conteiner">
-    <h2 class="titulo_explore">
-    Explore por plataforma
-    </h2>
+                    <div class="conteiner">
     
-    <div class="row-fluid">
-    <div class="append_items">    
-    <li class="explore_item">
-    <a href="https://www.thkeys.com.br/gift-xbox">
-    <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/explore-xbox.png" alt="">
-    </a>
-    </li>
+                        <ul class="explore_items">
+                            ${itemsHTML}
+                        </ul>
     
-    <li class="explore_item">
-    <a href="https://www.thkeys.com.br/app-store-19852754">
-    <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/explore_itunes.png" alt="">
-    </a>
-    </li>
+                    </div>
     
-    <li class="explore_item">
-    <a href="https://www.thkeys.com.br/gift-playstation">
-    <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/explore-playstation.png" alt="">
-    </a>
-    </li>
+                </section>
     
-    <li class="explore_item">
-    <a href="https://www.thkeys.com.br/pc-">
-    <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/explore-steam.png" alt="">
-    </a>
-    </li>
+            `);
     
-    <li class="explore_item">
-    <a href="https://www.thkeys.com.br/buscar?q=FC+POINTS">
-    <img src="https://cdn.awsli.com.br/2679/2679412/arquivos/explore_fc.png" alt="">
-    </a>
-    </li>
-    
-    <li class="explore_item">
-    <a href="https://www.thkeys.com.br/buscar?q=fortnite">
-    <img src="https://cdn.awsli.com.br/2679/2679412/arquivos/explore_fortinite.png" alt="">
-    </a>
-    </li>
-    
-    <li class="explore_item">
-    <a href="https://www.thkeys.com.br/garena-free-fire-diamantes">
-    <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/explore_freefire.png" alt="">
-    </a>
-    </li>
-    
-    <li class="explore_item">
-    <a href="https://www.thkeys.com.br/buscar?q=playstation+plus+brasil">
-    <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/explore_plus.png" alt="">
-    </a>
-    </li>
-    
-    <li class="explore_item">
-    <a href="https://www.thkeys.com.br/nintendo">
-    <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/explore-nintendo.png" alt="">
-    </a>
-    </li>
-    
-    <li class="explore_item">
-    <a href="https://www.thkeys.com.br/roblox?sort=%2Bpreco">
-    <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/explore-roblox.png" alt="">
-    </a>
-    </li>        
-    
-    <li class="explore_item">
-    <a href="https://www.thkeys.com.br/google-play">
-    <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/explore_googleplay.png" alt="">
-    </a>
-    </li>
-    
-    </div>
-    </div>
-    </div>
-    
-    </div>
-    
-    `);
         }
-
-        if (!$('.videoTrailer').length && $('#listagemProdutos .vitrine-3332079').length) {
-            $('#listagemProdutos .vitrine-3332079').before(`
     
+
+    if (!$('.videoTrailer').length && $('#listagemProdutos .vitrine-3332079').length) {
+        $('#listagemProdutos .vitrine-3332079').before(`
+
     <div class="videoTrailer">
     <div class="banner-title">
       <strong>Ofertas em destaque</strong>
