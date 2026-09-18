@@ -53,10 +53,10 @@ button,
 
     /* Cores página carrinho */
     --cor-principal-carrinho: #000;
-    --cor-botao-finalizar-compra: #11ad56;
+    --cor-botao-finalizar-compra: linear-gradient(270deg, #00E4FB 0%, #767AB3 100%);
 
     /* Cores página produto */
-    --cor-botao-comprar: #00E4FB;
+    --cor-botao-comprar: linear-gradient(270deg, #00E4FB 0%, #767AB3 100%);
     --fundo-botao-ativo-variacao: #042b16;
     --texto-botao-ativo-variacao: #e5ddac;
 
@@ -71,7 +71,7 @@ button,
     --cor-de-link: #000;
 
     /* Cor de botões */
-    --cor-de-botoes: #0f7042;
+    --cor-de-botoes: linear-gradient(270deg, #00E4FB 0%, #767AB3 100%);
 
     /* Gradiente */
     --gradiente: linear-gradient(270deg, #00E4FB 0%, #767AB3 100%);
@@ -1769,6 +1769,7 @@ div#porPreco {
     opacity: 1;
     padding: 0 12px 12px;
     display: block;
+    bottom: 0;
 }
 
 .listagem .listagem-item {
@@ -1850,7 +1851,7 @@ div#porPreco {
     font-size: 18px;
     line-height: 100%;
     color: var(--branco);
-    margin: 14px 0;
+    margin: 11px 0;
 }
 
 .listagem .preco-parcela,
