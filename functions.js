@@ -56,6 +56,23 @@ $(document).ready(function () {
             ]
     });
 
+        // Barra de promoção inicial
+
+        $(function () {
+
+            const promoImage = 'https://cdn.awsli.com.br/2727/2727537/arquivos/header_promo_bar.png';
+            const promoLink = '#';
+        
+            $('#cabecalho').before(`
+                <div class="promo-bar">
+                    <a href="${promoLink}">
+                        <img src="${promoImage}" alt="Promoção">
+                    </a>
+                </div>
+            `);
+        
+        });
+
 
     // Cabeçalho desktop
     if (isDesktop) {
@@ -1040,23 +1057,6 @@ $(document).ready(function () {
     if ($('.embalagem').length && $('.surprise-box').length) {
         $('.surprise-box').before($('.embalagem'));
     }
-
-    // Barra de promoção inicial
-
-    $(function () {
-
-        const promoImage = 'https://cdn.awsli.com.br/2727/2727537/arquivos/header_promo_bar.png';
-        const promoLink = '#';
-    
-        $('#cabecalho').before(`
-            <div class="promo-bar">
-                <a href="${promoLink}">
-                    <img src="${promoImage}" alt="Promoção">
-                </a>
-            </div>
-        `);
-    
-    });
 
 });
 
