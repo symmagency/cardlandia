@@ -729,7 +729,7 @@ ul.drop-login li:last-child {
 }
 
 .conteudo-topo .inferior .span4.hidden-phone {
-    width: 155px;
+    width: fit-content;
     text-align: center;
     margin: 0;
     display: flex;
@@ -953,7 +953,7 @@ ul.drop-login li:last-child {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
+    padding: 16px 0;
 }
 
 .menu.superior li:last-child>a i {
@@ -1119,20 +1119,20 @@ ul.drop-login li:last-child {
 
 .banner.cheio .flexslider .flex-direction-nav .flex-next,
 .banner.cheio .flexslider .flex-direction-nav .flex-prev {
-    background: var(--cor-da-marca);
+    background: var(--gradiente);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    border-radius: 4px;
-    height: 50px;
+    width: 56px;
+    border-radius: 99px;
+    height: 56px;
     opacity: 1;
     font-size: 0;
 }
 
 .banner.cheio .flexslider .flex-direction-nav .flex-next:after {
     content: "";
-    background: url(https://cdn.awsli.com.br/1041/1041512/arquivos/arrow_front.png) center no-repeat;
+    background: url(https://symmagency.github.io/cardlandia/assets/icones/chev-right.svg) center no-repeat;
     display: block;
     width: 24px;
     height: 24px;
@@ -1140,7 +1140,7 @@ ul.drop-login li:last-child {
 
 .banner.cheio .flexslider .flex-direction-nav .flex-prev:before {
     content: "";
-    background: url(https://cdn.awsli.com.br/1041/1041512/arquivos/arrow_back.png) center no-repeat;
+    background: url(https://symmagency.github.io/cardlandia/assets/icones/chev-left.svg) center no-repeat;
     display: block;
     width: 24px;
     height: 24px;
