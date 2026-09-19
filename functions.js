@@ -171,9 +171,43 @@ $(document).ready(function () {
         
         });
 
+        // Ajuste na página de produto
+        if ($('.produto .conteiner-imagem .produto-detalhe-info').length === 0) {
+            $('.produto .conteiner-imagem').append(`
+                <div class="produto-detalhe-info"></div>
+            `);
+        }
+
+        if ($('.pagina-produto .produto div.principal .gateways-rodape').length === 0) {
+            $('.pagina-produto .produto div.principal').append($('#rodape .pagamento .gateways-rodape'));
+        }
+        
+        if ($('#principal-konfidency').length === 0) {
+            $('.pagina-produto .produto div.principal').before(`
+                <div id="principal-rareviews">
+                    <p>Excelente</p>
+                    <img src="https://symmagency.github.io/cardlandia/assets/icones/ra-reviews/ra-stars.svg" alt="logo"/>
+                    <img src="https://symmagency.github.io/cardlandia/assets/icones/ra-reviews/ra-logo.svg" alt="logo"/>
+                </div>
+                `);
+        }
+
 
     // Cabeçalho desktop
     if (isDesktop) {
+
+        // Move elementos para produto-detalhe-info (somente se não estiverem lá)
+        if ($('.produto .produto-detalhe-info .info-principal-produto').length === 0) {
+            $('.produto .produto-detalhe-info').append($('.pagina-produto .produto div.principal .info-principal-produto'));
+        }
+        if ($('.produto .produto-detalhe-info .produto-detalhe').length === 0) {
+            $('.produto .produto-detalhe-info').append($('.produto-detalhe'));
+        }
+        
+        if ($('.produto .produto-detalhe-info .acoes-produto .preco-produto').length === 0) {
+            $('.produto .produto-detalhe-info').append($('.produto .principal .acoes-produto .preco-produto'));
+        }
+        
         runDeferred(function () {
 
             $('#cabecalho').after('<div id="menuCat"><div class="conteiner"><div class="row-fluid"></div></div></div>');

@@ -2580,11 +2580,6 @@ div#blank-product-position1+.abas-custom:before {
     position: relative;
 }
 
-.produto .conteiner-imagem img {
-    width: 100%;
-    max-width: 933px;
-}
-
 .nome-produto .lista-favoritos {
     position: absolute;
     right: 0;
@@ -7455,11 +7450,6 @@ div#blog {
 
     .pagina-busca #botaoWhats a {
         font-size: 0;
-    }
-
-    .produto .conteiner-imagem img {
-        width: 933px;
-        height: 433px;
     }
 
     .produto .codigo-produto>span+span {
