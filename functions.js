@@ -361,7 +361,7 @@ $(document).ready(function () {
     $('.cadastro-logar .form-horizontal .controls #id_senha').attr("placeholder", "Senha");
     $('.cadastro-logar>.span6:nth-child(2) #id_email').attr("placeholder", "Digite o email que deseja cadastrar:");
     $('.produto .acoes-produto .desconto-a-vista').before('<span class="bandeira_promo_principal">-10% OFF NO PIX</span>');
-    $('.pagina-produto .produto .span6 > .principal').append('<span class="aviso_produto">* Todos os produtos do nosso site são códigos 100% originais, enviados por e-mail.</span>');
+    $('.pagina-produto .produto .span6 > .principal').append('<span class="aviso_produto">Enviamos os códigos todos os dias da semana, receba de forma rápida e segura em seu E-MAIL, fique atento a caixa de ENTRADA e SPAM.</span>');
 
     $('#rodape > div:last-child .row-fluid > div:last-child a img').attr('src', 'https://cdn.awsli.com.br/1041/1041512/arquivos/loja-integrada.svg');
     $('#rodape .span4.selos > ul > li:first-child img').attr('src', 'https://cdn.awsli.com.br/1041/1041512/arquivos/selo-protegido.png');
