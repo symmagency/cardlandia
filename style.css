@@ -9010,3 +9010,27 @@ div#avisoEnvio {
        display: none;
     }
 }
+
+ul.slick-dots {
+    display: flex!important;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    justify-content: center;
+}
+
+.slick-dots li {
+    margin: 0;
+}
+
+ul.slick-dots > li > button {
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 99px;
+}
+
+ul.slick-dots > li.slick-active > button {
+    background: var(--cor-da-marca);
+    width: 24px;
+}
