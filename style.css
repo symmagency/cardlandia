@@ -4072,6 +4072,10 @@ div#telefoneRodape {
     margin-bottom: 30px;
 }
 
+.pagina-carrinho:not(.carrinho-checkout) .cabecalho-interno {
+    display: none;
+}
+
 .pagina-login .recuperar-senha {
     margin-left: 0;
     color: #999;
@@ -7933,6 +7937,13 @@ div#avisoEnvio {
         bottom: 20px;
     }
 
+    .box-image img {
+        width: 80px;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
     .box-text {
         width: 100%;
     }
@@ -8990,6 +9001,7 @@ div#avisoEnvio {
      
        align-self: center;
        justify-self: end;
+       display: none;
      }
     
     }
