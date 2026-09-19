@@ -411,21 +411,6 @@ $(document).ready(function () {
             );
 
             $('.vitrine-3323786').before($('.banner.tarja'));
-
-            $('#cabecalho .menu.superior .nivel-um').prepend(
-                '<li class="cab-nav">' +
-                '<a class="close-nav-full"></a>' +
-                '<div class="close-nav">' +
-                '<span class="category cor-principal"><i><div class="hamb-1 fundo-principal"></div><div class="hamb-1 fundo-principal"></div><div class="hamb-1 fundo-principal"></div></i></span>' +
-                '</div>' +
-                '<ul class="cab-nav-menu"></ul>' +
-                '<div class="acc-nav">' +
-                '</div>' +
-                '</li>'
-            );
-            if ($('.btn-group').length) {
-                $('.menu.superior .nivel-um .cab-nav .cab-nav-menu').prepend('<li class="logado-sair"><a href="/conta/logout"><i class="signin-icon"></i><span>Sair</span></a></li>');
-            }
             $('.menu.superior .nivel-um .cab-nav .acc-nav').append($('#cabecalho a.icon-user'));
             $('#cabecalho .cab-nav a').addClass('cor-principal');
 
