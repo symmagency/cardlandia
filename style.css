@@ -2803,22 +2803,20 @@ div#blank-product-position1+.abas-custom:before {
 }
 
 .produto .principal .acoes-produto .botao-comprar {
-    padding: 0 30px;
-    border-radius: 6px;
-    border: 0;
+    padding: 0px 30px;
+    border-radius: 99px;
+    border: 0px;
     height: 60px;
-    line-height: 60px;
-    background-image: none;
+    line-height: 70px;
     font-weight: 500;
     text-shadow: none;
     width: 100%;
     box-sizing: border-box;
-    background: #339F58;
-    transition: all .4s;
-    font-size: 14px;
+    transition: 0.4s;
+    font-size: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 span.aviso_produto {
@@ -2830,13 +2828,13 @@ span.aviso_produto {
     padding: 0 !important;
 }
 
-.produto .principal .acoes-produto .botao-comprar:before {
+.produto .principal .acoes-produto .botao-comprar::before {
     content: "";
     width: 24px;
     height: 24px;
-    background: url(https://cdn.awsli.com.br/2679/2679412/arquivos/add_shopping_cart.svg) center center no-repeat;
+    background: url(https://symmagency.github.io/cardlandia/assets/icones/arrow-right.svg) center center no-repeat;
     order: 2;
-    margin-left: 10px;
+    margin-left: auto;
 }
 
 .produto .principal .acoes-produto .botao-comprar:after {
