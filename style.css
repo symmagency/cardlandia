@@ -1,13 +1,4 @@
-/**
- * TH Keys — estilos do tema
- *
- * Organização geral:
- * 1. Base, variáveis e componentes globais
- * 2. Cabeçalho, navegação e banners
- * 3. Vitrines e páginas internas
- * 4. Rodapé, modais e conta
- * 5. Carrinho e ajustes responsivos
- */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 /* =====================================================
    BASE E VARIÁVEIS
@@ -28,7 +19,7 @@ input,
 button,
 .titulo {
     text-decoration: none !important;
-    font-family: 'Sora', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     text-rendering: geometricPrecision;
 }
 
@@ -1461,11 +1452,12 @@ button#botaoWhats {
 .listagem .preco-produto>div:first-child {
     display: flex;
     width: 100%;
-    background: #2E3036;
+    background: #00e4fb1a;
     border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, .1);
+    border: 0;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
 .pagina-produto .listagem .preco-produto>div:first-child {
@@ -1798,7 +1790,7 @@ div#porPreco {
 }
 
 .pagina-produto .listagem-item .bandeiras-produto {
-    top: 57px;
+    top: 10px;
 }
 
 .pagina-produto .listagem .span3 .listagem-item .nome-produto {
@@ -3184,7 +3176,7 @@ span.bandeira_promo_principal {
 }
 
 .pagina-categoria .listagem-item .bandeiras-produto {
-    top: 26%;
+    top: 10px
 }
 
 .breadcrumbs ul li:first-child i,
@@ -5032,17 +5024,6 @@ select {
 
 @media screen and (max-width: 767px) {
 
-    .pagina-categoria .listagem .listagem-item:after,
-    .pagina-busca .listagem .listagem-item:after {
-        top: 60px !important;
-    }
-
-
-    .pagina-categoria .listagem-item .bandeiras-produto,
-    .pagina-busca .listagem-item .bandeiras-produto {
-        top: 60px;
-    }
-
     .resumo-compra .tabela-carrinho .text-right {
         padding: 5px 20px !important;
     }
@@ -5995,7 +5976,7 @@ select {
     }
 
     .listagem-item .bandeiras-produto {
-        top: 13%;
+        top: 10px;
         left: 10px;
     }
 
@@ -7136,28 +7117,6 @@ div#blog {
     box-shadow: 2px 4px rgba(0, 0, 0, .3);
 }
 
-.listagem .listagem-item:after {
-    content: "Cashback";
-    height: 20px;
-    display: block;
-    position: absolute;
-    top: 120px;
-    background: #ffa801;
-    right: 0;
-    padding: 2px 8px;
-    color: #000;
-    font-weight: 600;
-    font-size: 10px;
-    border-radius: 2px 0 0 2px;
-    box-shadow: 2px 4px rgba(0, 0, 0, .3);
-}
-
-.pagina-categoria .listagem .listagem-item:after,
-.pagina-busca .listagem .listagem-item:after {
-    top: 80px;
-}
-
-
 
 #modalContato tr:nth-child(5) {
     display: none;
@@ -7421,18 +7380,6 @@ div#blog {
 /* Ajustes CLS */
 
 @media screen and (min-width: 768px) {
-
-    /*.produto-thumbs.thumbs-horizontal {
-    display: none !important;
-}*/
-
-    .pagina-busca .listagem-item .bandeiras-produto {
-        top: 52px !important;
-    }
-
-    .pagina-categoria .listagem-item .bandeiras-produto {
-        top: 76px !important;
-    }
 
     .pagina-busca #botaoWhats a:after {
         content: "Comprar pelo Whats";
