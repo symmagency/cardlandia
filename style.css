@@ -8846,6 +8846,25 @@ div#blog {
 .mais-vendidos-destaque + ul .listagem-linha li.slick-slide:nth-child(19) .listagem-item:after { content: "19"; }
 .mais-vendidos-destaque + ul .listagem-linha li.slick-slide:nth-child(20) .listagem-item:after { content: "20"; }
 
+@media screen and (max-width: 768px) {
+
+    .mais-vendidos-destaque + ul .slick-track {
+        grid-template-columns: 1fr;
+    }
+
+    .listagem .mais-vendidos-destaque + ul .preco-produto>div {
+        margin: 0;
+        width: fit-content;
+        border-radius: 99px;
+        padding: 0 16px;
+    }
+    
+    .listagem .mais-vendidos-destaque + ul .info-produto {
+        flex-direction: column;
+    }
+
+}
+
 /* ==========================================
    REVIEWS
 ========================================== */

@@ -485,6 +485,10 @@ $(document).ready(function () {
             });
 
             $('.conteudo-topo').before($('.menu.superior'));
+
+            if ($('#miniBannerFullw').length && $('#listagemProdutos .vitrine-22673218').length) {
+                $('#listagemProdutos .vitrine-22673218').before($('#miniBannerFullw'));
+            }
         });
     }
 
@@ -1142,6 +1146,7 @@ $(document).ready(function () {
         if ($('#miniBannerFullw').length && $('#listagemProdutos .vitrine-22673218').length) {
             $('#listagemProdutos .vitrine-22673218').before($('#miniBannerFullw'));
         }
+
         $('#rodape .institucional .links-rodape-paginas ul').append(`<li><a href="https://blog.thkeys.com.br/" target="_blank">Blog</a></li>`);
 
         if (!$('#explore_by-cat').length && $('.pagina-inicial .vitrine-3323787').length) {
