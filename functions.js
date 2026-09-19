@@ -845,6 +845,28 @@ $(document).ready(function () {
             });
         }
 
+        $(function () {
+            var $container = $('#listagemProdutos');
+          
+            var $titulo = $container.find('.vitrine-mas-vendido');
+            var $ul = $titulo.next('ul');
+          
+            if (!$titulo.length || !$ul.length) return;
+          
+            // clona
+            var $cloneTitulo = $titulo.clone(true, true)
+              .addClass('mais-vendidos-destaque');
+          
+            var $cloneUl = $ul.clone(true, true)
+              .addClass('mais-vendidos-destaque');
+          
+            // insere no final
+            $container
+              .find('ul.produtos-carrossel')
+              .last()
+              .after($cloneTitulo, $cloneUl);
+          });
+
         $('#rodape .institucional').after($('.span4.selos'));
         $('.span4.selos ul > li:first-child').after(`
     <li> <img alt="Loja Oficial Mercado Livre" src="https://cdn.awsli.com.br/1041/1041512/arquivos/oficial-ml.png" width="135" height="43px" /> </li>
