@@ -6576,7 +6576,6 @@ select {
     }
 
     .listagem .listagem-linha {
-        padding: 0 16px !important;
         box-sizing: border-box;
     }
 
@@ -6689,6 +6688,10 @@ select {
 
     .banner .flex-control-paging li {
         margin: 0 7px;
+    }
+
+    .row-fluid .produto {
+        padding: 16px;
     }
 
     #rodape .institucional {
