@@ -6668,60 +6668,6 @@ select {
         padding: 0;
     }
 
-    .slick-dots {
-        position: absolute;
-        bottom: -45px;
-        display: flex !important;
-        justify-content: center;
-        width: 100%;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-        margin-left: 0px;
-        margin-bottom: 20px !important;
-    }
-
-    .slick-dots li {
-        width: 25px !important;
-    }
-
-    .slick-dots li button {
-        font-size: 0;
-        line-height: 0;
-        display: block;
-        width: 20px;
-        height: 20px;
-        padding: 5px;
-        cursor: pointer;
-        color: transparent;
-        border: 0;
-        outline: none;
-        background: transparent;
-    }
-
-    .slick-dots li button:before {
-        font-family: 'slick';
-        font-size: 42px;
-        line-height: 20px;
-        position: relative;
-        display: flex;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        content: '•';
-        text-align: center;
-        opacity: .25;
-        color: black;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-
-    .slick-dots li.slick-active button:before {
-        opacity: .75;
-        color: black;
-    }
-
     .banner .flex-control-paging li a {
         border-radius: 50%;
         opacity: .25;
