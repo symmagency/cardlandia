@@ -4922,7 +4922,7 @@ form#formCalcularFrete {
 
 .cat span.category {
     display: block;
-    width: 28px;
+    width: fit-content;
     margin: 0 auto;
     height: fit-content;
 }
@@ -4944,11 +4944,11 @@ input#usarCupom {
 /* -- Menu Hamburguer */
 
 .category>i {
-    width: 28px;
+    width: fit-content;
     display: inline-block;
     position: relative;
-    margin-right: 8px;
-    top: 3px;
+    margin-right: 0;
+    top: 0;
 }
 
 .hamb-1 {
