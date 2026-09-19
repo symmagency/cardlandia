@@ -834,46 +834,35 @@ $(document).ready(function () {
     `);
         }
 
-$('.mini-banner .modulo.span4:first-child').before(`
-    <div id="porPreco">
-    <div class="titulo_porpreco">
-    <h2>Já sabe quanto vai gastar?</h2>
-    <p>Encontre produtos por faixa de preço</p>
-    </div>
-    
-    <div class="precos">
-    <div class="preco_linha">
-    <li class="porpreco_item">
-    <a href="./10">R$ 10</a>
-    </li>
-    <li class="porpreco_item">
-    <a href="./20">R$ 20</a>
-    </li>
-    <li class="porpreco_item">
-    <a href="./30">R$ 30</a>
-    </li>
-    <li class="porpreco_item">
-    <a href="./50">R$ 50</a>
-    </li>
-    </div>
-    
-    <div class="preco_linha">
-    <li class="porpreco_item">
-    <a href="./100">R$ 100</a>
-    </li>
-    <li class="porpreco_item">
-    <a href="./150">R$ 150</a>
-    </li>
-    <li class="porpreco_item">
-    <a href="./200">R$ 200</a>
-    </li>
-    <li class="porpreco_item">
-    <a href="./250">R$ 250</a>
-    </li>
-    </div>
-    </div>
-    </div>
-    `);
+        (function insertPorPreco() {
+            var $target = $('.mini-banner .modulo.span4:first-child');
+            if (!$target.length || $('#porPreco').length) return;
+
+            var precos = [10, 20, 30, 50, 100, 150, 200, 250];
+            var itens = precos.map(function (valor) {
+                return (
+                    '<li class="porpreco_item">' +
+                        '<a href="./' + valor + '">' +
+                            '<span>R$</span> <strong>' + valor + '</strong>' +
+                        '</a>' +
+                    '</li>'
+                );
+            });
+            var metade = Math.ceil(itens.length / 2);
+
+            $target.before(
+                '<div id="porPreco">' +
+                    '<div class="titulo_porpreco">' +
+                        '<h2>Já sabe quanto vai gastar?</h2>' +
+                        '<p>Encontre produtos por faixa de preço</p>' +
+                    '</div>' +
+                    '<div class="precos">' +
+                        '<ul class="preco_linha">' + itens.slice(0, metade).join('') + '</ul>' +
+                        '<ul class="preco_linha">' + itens.slice(metade).join('') + '</ul>' +
+                    '</div>' +
+                '</div>'
+            );
+        })();
 
     $('.mini-banner img').each(function () {
         var $img = $(this);

@@ -1508,7 +1508,9 @@ div#miniBannerFullw {
 #porPreco .preco_linha {
     display: flex;
     gap: 14px;
-    margin-bottom: 14px;
+    margin: 0 0 14px;
+    padding: 0;
+    list-style: none;
 }
 
 #porPreco .preco_linha .porpreco_item {
@@ -1539,6 +1541,14 @@ div#porPreco {
 
 #porPreco .preco_linha .porpreco_item a {
     color: var(--branco);
+}
+
+#porPreco .preco_linha .porpreco_item a span {
+    font-weight: 400;
+}
+
+#porPreco .preco_linha .porpreco_item a strong {
+    font-weight: 700;
 }
 
 #porPreco .titulo_porpreco h2 {
