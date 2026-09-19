@@ -1420,18 +1420,18 @@ $(document).ready(function () {
         $container.append(`
         <div class="surprise-box">
           <div class="box-image">
-            <img src="https://cdn.awsli.com.br/2775/2775575/arquivos/box-cart.png" alt="Caixa surpresa para PC">
+            <img src="https://symmagency.github.io/cardlandia/assets/jogo-surpresa.png" alt="Caixa surpresa para PC">
           </div>
           <div class="box-text">
             <span>Ganhe <strong>1</strong> jogo surpresa para PC!</span>
-            <img src="https://cdn.awsli.com.br/2775/2775575/arquivos/steam.png" alt="Steam">
+            <img src="https://symmagency.github.io/cardlandia/assets/steam.png" alt="Steam">
           </div>
           <div class="append-price">
               <div class="box-price">
                 R$ 19,90
               </div>
               <div class="box-button-add">
-                <img src="https://cdn.awsli.com.br/2775/2775575/arquivos/add_shopping_cart.svg" alt="Adicionar ao carrinho">
+                <img src="https://symmagency.github.io/cardlandia/assets/icones/add-cart.svg" alt="Adicionar ao carrinho">
               </div>
           </div>
         </div>
