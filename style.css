@@ -8224,6 +8224,10 @@ body {
     width: 100%;
     padding-top: 6px;
  }
+
+ .listagem .produtos-carrossel {
+    padding: 0;
+ }
  
  .pagina-inicial ul.slick-initialized.slick-slider {
     width: 100% !important;
@@ -8282,6 +8286,12 @@ body {
     height: 20px;
     background: url(https://symmagency.github.io/cardlandia/assets/icones/chev-left.svg) center no-repeat;
     display: flex;
+}
+
+.slick-slider .slick-next.slick-disabled,
+.slick-slider .slick-prev.slick-disabled {
+    opacity: .5;
+    filter: grayscale(1);
 }
 
  @media screen and (max-width: 768px) {
