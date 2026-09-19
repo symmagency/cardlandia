@@ -1515,11 +1515,11 @@ div#miniBannerFullw {
 
 #porPreco .preco_linha .porpreco_item {
     width: 100%;
-    height: 104px;
+    height: 124px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 32px;
     font-weight: bold;
     background: rgba(255, 255, 255, .05);
     border-radius: 10px;
@@ -1545,17 +1545,20 @@ div#porPreco {
 
 #porPreco .preco_linha .porpreco_item a span {
     font-weight: 400;
+    opacity: .7;
 }
 
 #porPreco .preco_linha .porpreco_item a strong {
     font-weight: 700;
+    color: var(--cor-da-marca);
 }
 
 #porPreco .titulo_porpreco h2 {
-    font-size: 16px;
+    font-size: 24px;
     color: var(--branco);
-    line-height: 20px;
     margin: 0 0 4px;
+    font-weight: normal;
+    line-height: unset;
 }
 
 #porPreco .titulo_porpreco p {
