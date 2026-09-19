@@ -875,6 +875,25 @@ $('.mini-banner .modulo.span4:first-child').before(`
     </div>
     `);
 
+    $('.mini-banner img').each(function () {
+        var $img = $(this);
+        var src = $img.attr('src');
+
+        if (!src) return;
+
+        // Troca 400x400 por 800x800
+        var newSrc = src.replace('/400x400/', '/800x800/');
+
+        if (newSrc !== src) {
+        $img.attr('src', newSrc);
+
+        // Se houver lazyload com data-src
+        if ($img.attr('data-src')) {
+            $img.attr('data-src', newSrc);
+        }
+        }
+    });
+
         if ($('#miniBannerFullw').length && $('#listagemProdutos > ul:nth-child(5)').length) {
             $('#listagemProdutos > ul:nth-child(5)').after($('#miniBannerFullw'));
         }

@@ -1965,10 +1965,6 @@ div#categoriasListagem {
     border: 0;
 }
 
-.row-fluid.banner.mini-banner.hidden-phone {
-    display: none;
-}
-
 .listagem .titulo-categoria:first-child {
     margin-top: 0 !important;
 }
