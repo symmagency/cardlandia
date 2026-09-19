@@ -7057,22 +7057,6 @@ div#avisoEnvio {
 }
 
 @media screen and (min-width: 768px) {
-
-    .pagina-carrinho .quantidade {
-        display: flex;
-        width: 70px;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    input.input-mini {.tabela-carrinho .quantidade
-        input[type="text"] {
-        background: none;
-        color: #fff;
-        font-weight: bold;
-        padding: 0;
-        margin: 0;
-    };
     
     .tabela-carrinho .quantidade a, .tabela-carrinho .excluir a {
         font-size: 12px!important;
@@ -7876,6 +7860,22 @@ div#avisoEnvio {
         border-radius: 5px;
         margin: 0;
     }
+
+    .pagina-carrinho .quantidade {
+        display: flex;
+        width: 70px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    input.input-mini {.tabela-carrinho .quantidade
+        input[type="text"] {
+        background: none;
+        color: #fff;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+    };
 
     .cupom-valor strong:first-child {
         display: none;
@@ -8906,7 +8906,7 @@ div#avisoEnvio {
        margin-bottom: 20px;
        padding: 24px;
      
-       background: #18210d;
+       background: #222328;
        border-radius: 18px;
        box-sizing: border-box;
      }
