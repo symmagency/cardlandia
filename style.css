@@ -691,6 +691,11 @@ ul.drop-login li:last-child {
     box-sizing: border-box;
 }
 
+.carrinho:hover>a {
+    border: 2px solid var(--cor-da-marca);
+    box-shadow: 0 0 20px rgba(0, 228, 251, .4);
+}
+
 .conteudo-topo .inferior .span4.hidden-phone {
     width: fit-content;
     text-align: center;
@@ -726,7 +731,7 @@ ul.drop-login li:last-child {
     top: 40px;
     right: 0;
     z-index: 30;
-    background-color: #fff;
+    background-color: #2E3036;
     border-radius: 6px;
     padding: 20px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
@@ -744,7 +749,7 @@ ul.drop-login li:last-child {
     display: block;
     float: none;
     text-align: center;
-    background: #e8e8e8;
+    background: transparent;
     padding: 10px 0;
 }
 
@@ -760,12 +765,16 @@ ul.drop-login li:last-child {
     font-size: 16px;
     text-align: left;
     padding: 0;
-    color: var(--preto);
+    color: var(--branco);
+}
+
+.carrinho-interno * {
+    color: var(--branco);
 }
 
 .carrinho-interno>div>span>span strong {
     float: right;
-    color: var(--preto);
+    color: var(--branco);
 }
 
 .carrinho-interno .preco-produto {
