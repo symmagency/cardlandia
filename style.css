@@ -5684,10 +5684,10 @@ select {
 
     .conteudo-topo .inferior .span8.busca-mobile {
         width: 100%;
-        padding: 0 20px;
+        padding: 0 16px;
         border-radius: 0;
-        margin-bottom: 10px;
         background: none;
+        margin: 10px 0 0;
     }
 
     .cat span.category {
@@ -5708,7 +5708,7 @@ select {
         margin: 0;
         border: 1px solid #ffffff10;
         background: #2E3036;
-        border-radius: 5px;
+        border-radius: 99px;
     }
 
     .conteiner .logo {
@@ -6068,6 +6068,8 @@ select {
         display: flex !important;
         margin: 0;
         flex-wrap: wrap;
+        padding: 0 16px;
+        box-sizing: border-box;
     }
 
     .pagina-inicial #corpo {
@@ -6133,7 +6135,12 @@ select {
     }
 
     #porPreco .preco_linha .porpreco_item {
-        height: 80px;
+        height: 60px;
+        font-size: 15px;
+    }
+
+    #porPreco .preco_linha:after {
+        display: none;
     }
 
     div#porPreco {
@@ -8262,8 +8269,14 @@ div#blog {
  .listagem-linha li.slick-slide {
     display: flex!important;
     border: 0;
+    margin: 0;
  }
  
+ div#listagemProdutos {
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
  .pagina-inicial #corpo > .conteiner {
     max-width: 100%;
     padding: 0;
@@ -9071,10 +9084,8 @@ div#blog {
 	.review-arrow {
 		width: 44px;
 		height: 44px;
-
 		border-radius: 15px;
-
-		font-size: 18px;
+		font-size: 0px;
 	}
 
 	.review-card {
