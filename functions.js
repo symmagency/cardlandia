@@ -188,6 +188,22 @@ $(document).ready(function () {
                 `);
         }
 
+
+        if ($('.checkout-seguro').length === 0) {
+            $('.pagina-produto .produto .span6>.principal').after(`
+                <div class="checkout-seguro">
+                    <strong>Checkout Seguro garantido</strong>
+                    <div class="pgto">
+                        <span>Métodos de pagamento confiáveis</span>
+                    </div>
+                    <div class="seguro">
+                        <span>Criptografia de Dados e Proteção</span>
+                    </div>
+                </div>
+                `);
+        }
+        
+
     // Cabeçalho desktop
     if (isDesktop) {
 
