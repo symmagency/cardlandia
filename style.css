@@ -3017,6 +3017,12 @@ span.bandeira_promo_principal {
     padding-top: 20px;
 }
 
+.produto-detalhe-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 #principal-rareviews p {
     font-size: 14px;
     color: var(--branco);

@@ -188,6 +188,14 @@ $(document).ready(function () {
                 `);
         }
 
+        $('.produto-detalhe-info').append(`
+            <div class="benefits">
+                <span>Envio por e-mail super rápido.</span>
+                <span>Produtos 100% originais.</span>
+                <span>Pague com Pix ou Boleto bancário.</span>
+                <span>Loja segura com criptografia SSL.</span>
+            </div>
+            `);
 
     // Cabeçalho desktop
     if (isDesktop) {
