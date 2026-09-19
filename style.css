@@ -3040,6 +3040,46 @@ span.bandeira_promo_principal {
     border-radius: 5px;
 }
 
+.benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.benefits span {
+    font-size: 14px;
+    color: var(--branco);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.benefits span:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.benefits span:first-child::before {
+    background: url(https://symmagency.github.io/cardlandia/assets/icones/envio.svg) center no-repeat;
+}
+
+.benefits span:nth-child(2)::before {
+    background: url(https://symmagency.github.io/cardlandia/assets/icones/check.svg) center no-repeat;
+}
+
+.benefits span:nth-child(3)::before {
+    background: url(https://symmagency.github.io/cardlandia/assets/icones/pix.svg) center no-repeat;
+}
+
+.benefits span:nth-child(4)::before {
+    background: url(https://symmagency.github.io/cardlandia/assets/icones/secure.svg) center no-repeat;
+}
+
 #carouselImagem .elastislide-carousel ul li.active a {
     opacity: 1;
 }
