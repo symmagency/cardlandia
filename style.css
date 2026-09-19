@@ -102,7 +102,7 @@ a {
     transition: all .3s;
     padding: 15px 20px;
     border: 0;
-    border-radius: 6px !important;
+    border-radius: 99px !important;
     font-weight: 600;
     text-shadow: none;
 }
@@ -7622,7 +7622,7 @@ div#blog {
     box-sizing: border-box;
     background: #222328;
     border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 0;
 }
 
 .pagina-carrinho:not(.carrinho-checkout) .cart-resume-container * {
@@ -7862,7 +7862,7 @@ div#blog {
     content: '';
     width: 24px;
     height: 24px;
-    background: url(https://cdn.awsli.com.br/2775/2775575/arquivos/forward_to_inbox.svg) center no-repeat;
+    background: url(https://symmagency.github.io/cardlandia/assets/icones/openlope.svg) center no-repeat;
     display: block;
     opacity: 0.4;
 }
@@ -7951,9 +7951,9 @@ div#blog {
     display: flex;
     align-items: center;
     width: 100%;
-    background: linear-gradient(90deg, #FFA800 0%, rgba(255, 168, 0, 0) 76.06%);
-    border: 1px solid #FFA800;
-    box-shadow: 0px 0px 13px 4px rgba(255, 214, 135, 0.2);
+    background: linear-gradient(270deg, #213035 0%, #007985 48.08%, #767AB3 100%);
+    border: 0;
+    box-shadow: none;
     border-radius: 8px;
     padding: 32px 40px 32px 150px;
     box-sizing: border-box;
@@ -7995,13 +7995,14 @@ div#blog {
 .box-price {
     font-size: 18px;
     font-weight: bold;
+    color: var(--cor-da-marca);
 }
 
 .box-button-add {
     box-sizing: border-box;
     padding: 10px 20px;
-    border: 1px solid #fff;
-    border-radius: 5px;
+    border: 1px solid var(--cor-da-marca);
+    border-radius: 99px;
     cursor: pointer;
 }
 
@@ -8150,7 +8151,7 @@ div#blog {
         padding: 32px;
         background: #222328;
         border-radius: 5px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        border: 0;
         height: fit-content;
     }
 
