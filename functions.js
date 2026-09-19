@@ -768,30 +768,49 @@ $(document).ready(function () {
     
     
 
-    if (!$('.videoTrailer').length && $('#listagemProdutos .vitrine-3332079').length) {
-        $('#listagemProdutos .vitrine-3332079').before(`
+        if (!$('.videoTrailer').length && $('#listagemProdutos .vitrine-3332079').length) {
+            var videoTrailer = {
+                titulo: 'Ofertas em destaque',
+                subtitulo: 'Jogos selecionados pela THKeys.',
+                trailerLabel: 'Assista ao trailer',
+                trailerUrl: 'https://www.youtube.com/watch?v=cv041_93_0Q',
+                preco: 'R$ 299,99',
+                precoSufixo: 'no pix',
+                compraLabel: 'Comprar agora',
+                compraUrl: './dy4bfpyl4-/grand-theft-auto-vi-ultimate-edition'
+            };
 
-    <div class="videoTrailer">
-    <div class="banner-title">
-      <strong>Ofertas em destaque</strong>
-      <span>Jogos selecionados pela THKeys.</span>
-    </div>
-    <div class="append-dbanners">
-    <div class="trailer_banner">
-    <a href="./pc-?sort=%2Bpreco">
-      <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/oferta-qn.png" alt="">
-    </a>
-    </div>
-    <div class="jogo_banner">
-    <a href="./pc-">
-    <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/jogo-brinde-pc.png" alt="">
-    <div class="append_preco_btn">
-    </div>
-    </a>
-    </div>
-    </div>
-    </div>
-    `);
+            $('#listagemProdutos .vitrine-22673203').before(`
+                <div class="videoTrailer">
+                    <div class="banner-title">
+                        <strong>${videoTrailer.titulo}</strong>
+                        <span>${videoTrailer.subtitulo}</span>
+                    </div>
+                    <div class="append-dbanners">
+                        <div class="trailer_banner">
+                            <button type="button" class="trailer_play-trigger" aria-label="${videoTrailer.trailerLabel}" data-trailer="${videoTrailer.trailerUrl}">
+                                <span class="trailer_play-icon" aria-hidden="true"></span>
+                                <span class="trailer_play-label">${videoTrailer.trailerLabel}</span>
+                            </button>
+                        </div>
+                        <div class="jogo_banner">
+                            <div class="append_preco_btn">
+                                <div class="preco">
+                                    <span class="preco-diamond" aria-hidden="true"></span>
+                                    <strong>${videoTrailer.preco}</strong>
+                                    <span>${videoTrailer.precoSufixo}</span>
+                                </div>
+                                <a class="btn" href="${videoTrailer.compraUrl}">
+                                    ${videoTrailer.compraLabel}
+                                    <svg class="btn-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                                        <path d="M3 9L9 3M9 3H4.5M9 3V7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `);
         }
 
         $('#rodape .institucional').after($('.span4.selos'));

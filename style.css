@@ -1656,12 +1656,7 @@ div#porPreco {
 
 .append-dbanners {
     display: flex;
-    gap: 20px;
-}
-
-.append-dbanners {
-    display: flex;
-    gap: 20px;
+    gap: 8px;
 }
 
 .banner-title strong {
@@ -1683,60 +1678,133 @@ div#porPreco {
     margin-top: 4px;
 }
 
-.trailer_banner>a {
-    width: 100%;
-    display: block;
+.trailer_banner,
+.jogo_banner {
     position: relative;
+    min-height: 320px;
+    overflow: hidden;
+    background: #2A2B30;
+    border-radius: 16px;
 }
 
 .trailer_banner {
-    width: 100%;
-    position: relative;
-    flex: 1;
+    flex: 1.7;
 }
 
 .jogo_banner {
-    position: relative;
     flex: 1;
+    background: #25262B;
+}
+
+.trailer_play-trigger {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.trailer_play-icon {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .12);
+}
+
+.trailer_play-icon:after {
+    content: "";
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    border-style: solid;
+    border-width: 10px 0 10px 16px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.trailer_play-label {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .append_preco_btn {
     position: absolute;
-    bottom: 0;
     right: 0;
+    bottom: 0;
     left: 0;
     display: flex;
-    padding: 40px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 24px;
     gap: 10px;
 }
 
-.append_preco_btn .btn {
-    width: 100%;
-    background: #FFA800;
-    color: #000;
-    text-shadow: none;
-    border: 0;
-    height: 48px;
+.append_preco_btn .preco {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    padding: 0 18px;
+    border: 1px solid rgba(255, 255, 255, .06);
+    border-radius: 999px;
+    background: #1C1D20;
+    color: #fff;
+    font-size: 14px;
+    white-space: nowrap;
 }
 
-.append_preco_btn .preco {
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    border: 1px solid rgba(255, 255, 255, .05);
-    background: #2E3036;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
+.append_preco_btn .preco-diamond {
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    background: var(--cor-da-marca);
+    transform: rotate(45deg);
+    flex-shrink: 0;
+}
+
+.append_preco_btn .preco strong {
+    color: var(--cor-da-marca);
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .append_preco_btn .preco span {
-    font-weight: normal;
     margin-left: 4px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: .8;
+}
+
+.append_preco_btn .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--cor-botao-comprar);
+    color: #fff;
     font-size: 14px;
+    font-weight: 500;
+    text-shadow: none;
+    white-space: nowrap;
+}
+
+.append_preco_btn .btn-arrow {
+    margin-left: 8px;
+    flex-shrink: 0;
 }
 
 .listagem-item .acoes-produto {
@@ -5205,8 +5273,15 @@ select {
     }
 
     .append_preco_btn {
-        flex-direction: column;
-        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 16px;
+    }
+
+    .trailer_banner,
+    .jogo_banner,
+    .trailer_play-trigger {
+        min-height: 240px;
     }
 
     #rodape .span9 .row-fluid {
@@ -5944,8 +6019,9 @@ select {
         margin-left: 8px;
     }
 
-    .append_preco_btn .preco {
-        height: 48px;
+    .append_preco_btn .preco,
+    .append_preco_btn .btn {
+        height: 44px;
     }
 
     .listagem .span3 .listagem-item .nome-produto,
