@@ -780,7 +780,7 @@ $(document).ready(function () {
                 compraUrl: './dy4bfpyl4-/grand-theft-auto-vi-ultimate-edition'
             };
 
-            $('#listagemProdutos .vitrine-22673203').before(`
+            $('#listagemProdutos .vitrine-3332079').before(`
                 <div class="videoTrailer">
                     <div class="banner-title">
                         <strong>${videoTrailer.titulo}</strong>
