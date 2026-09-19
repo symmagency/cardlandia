@@ -195,9 +195,17 @@ $(document).ready(function () {
                     <strong>Checkout Seguro garantido</strong>
                     <div class="pgto">
                         <span>Métodos de pagamento confiáveis</span>
+                        <ul>
+                            <li><img src="https://cdn.awsli.com.br/2679/2679412/arquivos/boleto.svg" alt="boleto"/></li>
+                            <li><img src="https://cdn.awsli.com.br/2679/2679412/arquivos/pix.svg" alt="google safe"/></li>
+                        </ul>
                     </div>
                     <div class="seguro">
                         <span>Criptografia de Dados e Proteção</span>
+                        <ul>
+                            <li><img src="https://cdn.awsli.com.br/1041/1041512/arquivos/selo-protegido.png" alt="site seguro"/></li>
+                            <li><img src="https://cdn.awsli.com.br/1041/1041512/arquivos/google-s-b.png" alt="google safe"/></li>
+                        </ul>
                     </div>
                 </div>
                 `);
