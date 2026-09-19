@@ -1,14 +1,3 @@
-/**
- * TH Keys — interações do tema
- *
- * Seções:
- * 1. Inicialização e utilitários
- * 2. Cabeçalho desktop e mobile
- * 3. Conta, busca e navegação
- * 4. Vitrines e blocos da página inicial
- * 5. Carrinho e Surprise Box
- */
-
 $(document).ready(function () {
 
     // Inicialização e utilitários
@@ -1145,6 +1134,269 @@ $(document).ready(function () {
     if ($('.embalagem').length && $('.surprise-box').length) {
         $('.surprise-box').before($('.embalagem'));
     }
+
+    $(function () {
+
+        // ==========================================
+        // CONFIGURAÇÃO
+        // Altere os conteúdos somente aqui
+        // ==========================================
+    
+        const reviewsConfig = {
+    
+            titulo: 'Veja o que estão falando de nós',
+            subtitulo: 'Quem comprou recomenda <3',
+    
+            reviews: [
+                {
+                    nome: 'Lucas Almeida',
+                    texto: 'Compra rápida e segura. Recebi meu produto praticamente na mesma hora!',
+                    nota: 5
+                },
+                {
+                    nome: 'Gabriel Martins',
+                    texto: 'Já comprei algumas vezes e sempre deu tudo certo. Recomendo demais.',
+                    nota: 5
+                },
+                {
+                    nome: 'Matheus Souza',
+                    texto: 'Atendimento excelente e entrega muito rápida. Pode comprar sem medo.',
+                    nota: 5
+                },
+                {
+                    nome: 'Rafael Oliveira',
+                    texto: 'Gostei bastante da experiência. Processo simples, rápido e seguro.',
+                    nota: 5
+                },
+                {
+                    nome: 'Bruno Santos',
+                    texto: 'Produto chegou certinho e sem complicação. Voltarei a comprar.',
+                    nota: 5
+                },
+                {
+                    nome: 'Felipe Costa',
+                    texto: 'Tudo muito fácil de entender. A entrega foi praticamente instantânea.',
+                    nota: 5
+                }
+            ]
+        };
+    
+    
+        // Evita duplicar a seção
+        if (!$('#rodape').length || $('#reviews-section').length) {
+            return;
+        }
+    
+    
+        // ==========================================
+        // CRIA ESTRELAS
+        // ==========================================
+    
+        function criarEstrelas(nota) {
+    
+            let estrelas = '';
+    
+            for (let i = 1; i <= 5; i++) {
+                estrelas += `
+                    <span class="${i <= nota ? 'active' : ''}">
+                        ★
+                    </span>
+                `;
+            }
+    
+            return estrelas;
+        }
+    
+    
+        // ==========================================
+        // CARDS
+        // ==========================================
+    
+        const reviewsHtml = reviewsConfig.reviews.map(review => `
+            
+            <div class="review-item">
+    
+                <div class="review-card">
+    
+                    <div class="review-stars">
+                        ${criarEstrelas(review.nota)}
+                    </div>
+    
+                    <div class="review-content">
+    
+                        <p class="review-text">
+                            ${review.texto}
+                        </p>
+    
+                        <strong class="review-name">
+                            ${review.nome}
+                        </strong>
+    
+                    </div>
+    
+                    <div class="review-security">
+    
+                        <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+    
+                            <path
+                                d="M12 3L19 6V11C19 15.55 16.04 19.74 12 21C7.96 19.74 5 15.55 5 11V6L12 3Z"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+    
+                            <path
+                                d="M12 8V13"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                            />
+    
+                            <circle
+                                cx="12"
+                                cy="16"
+                                r="1"
+                                fill="currentColor"
+                            />
+    
+                        </svg>
+                        Verificado
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        `).join('');
+    
+    
+        // ==========================================
+        // MONTA SEÇÃO
+        // ==========================================
+    
+        const sectionHtml = `
+    
+            <section id="reviews-section">
+    
+                <div class="reviews-container">
+    
+                    <div class="reviews-header">
+    
+                        <div class="reviews-heading">
+    
+                            <h2>
+                                ${reviewsConfig.titulo}
+                            </h2>
+    
+                            <p>
+                                ${reviewsConfig.subtitulo}
+                            </p>
+    
+                        </div>
+    
+    
+                        <div class="reviews-navigation">
+    
+                            <button
+                                class="review-arrow review-prev"
+                                type="button"
+                                aria-label="Depoimento anterior"
+                            >
+                                ←
+                            </button>
+    
+                            <button
+                                class="review-arrow review-next"
+                                type="button"
+                                aria-label="Próximo depoimento"
+                            >
+                                →
+                            </button>
+    
+                        </div>
+    
+                    </div>
+    
+    
+                    <div class="reviews-slider">
+                        ${reviewsHtml}
+                    </div>
+    
+                </div>
+    
+            </section>
+    
+        `;
+    
+    
+        $('.pagina-inicial #corpo').after(sectionHtml);
+    
+    
+        // ==========================================
+        // SLICK
+        // ==========================================
+    
+        const $slider = $('.reviews-slider');
+    
+    
+        if (typeof $.fn.slick !== 'function') {
+            console.warn('Slick Slider não foi encontrado.');
+            return;
+        }
+    
+    
+        $slider.slick({
+    
+            slidesToShow: 4,
+            slidesToScroll: 1,
+    
+            infinite: false,
+    
+            arrows: true,
+    
+            dots: false,
+    
+            speed: 400,
+    
+            prevArrow: $('.review-prev'),
+            nextArrow: $('.review-next'),
+    
+            responsive: [
+    
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+    
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+    
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+    
+            ]
+    
+        });
+    
+    });
 
 });
 

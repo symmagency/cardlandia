@@ -8736,3 +8736,262 @@ div#blog {
 .mais-vendidos-destaque + ul .listagem-linha li.slick-slide:nth-child(18) .listagem-item:after { content: "18"; }
 .mais-vendidos-destaque + ul .listagem-linha li.slick-slide:nth-child(19) .listagem-item:after { content: "19"; }
 .mais-vendidos-destaque + ul .listagem-linha li.slick-slide:nth-child(20) .listagem-item:after { content: "20"; }
+
+/* ==========================================
+   REVIEWS
+========================================== */
+
+#reviews-section {
+	width: 100%;
+	background: #000;
+	padding: 56px 0 72px;
+	overflow: hidden;
+}
+
+#reviews-section * {
+	box-sizing: border-box;
+}
+
+.reviews-container {
+	width: calc(100% - 40px);
+	max-width: 1435px;
+	margin: 0 auto;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.reviews-header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 30px;
+
+	margin-bottom: 46px;
+}
+
+.reviews-heading h2 {
+	margin: 0;
+
+	color: #fff;
+
+	font-size: 28px;
+	line-height: 1.15;
+	font-weight: 700;
+}
+
+.reviews-heading p {
+	margin: 8px 0 0;
+
+	color: #fff;
+
+	font-size: 14px;
+	line-height: 1.4;
+	font-weight: 500;
+}
+
+/* ==========================================
+   ARROWS
+========================================== */
+
+.reviews-navigation {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.review-arrow {
+	width: 72px;
+	height: 48px;
+	padding: 0;
+	border: 0;
+	border-radius: 22px;
+	background: rgba(255, 255, 255, 0.1);
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0px;
+	cursor: pointer;
+	transition: 0.2s ease;
+}
+
+.review-arrow:hover {
+	transform: translateY(-2px);
+}
+
+.review-next:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(https://symmagency.github.io/cardlandia/assets/icones/chev-right.svg) center no-repeat;
+}
+
+.review-prev:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(https://symmagency.github.io/cardlandia/assets/icones/chev-left.svg) center no-repeat;
+}
+
+/* slick já adiciona essa classe */
+
+.review-arrow.slick-disabled {
+	opacity: 0.35;
+	pointer-events: none;
+}
+
+/* ==========================================
+   SLICK
+========================================== */
+
+.reviews-slider {
+	margin: 0 -10px;
+}
+
+.reviews-slider .slick-list {
+	overflow: hidden;
+}
+
+.reviews-slider .slick-track {
+	display: flex;
+}
+
+.reviews-slider .slick-slide {
+	height: auto;
+}
+
+.reviews-slider .slick-slide > div {
+	height: 100%;
+}
+
+/* ==========================================
+   ITEM
+========================================== */
+
+.review-item {
+	padding: 0 10px;
+	height: 100%;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.review-card {
+	min-height: 272px;
+	height: 100%;
+
+	padding: 28px 30px;
+
+	background: rgba(255, 255, 255, 0.1);
+
+	border-radius: 10px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+/* ==========================================
+   STARS
+========================================== */
+
+.review-stars {
+	display: flex;
+	align-items: center;
+	gap: 3px;
+
+	margin-bottom: 25px;
+
+	font-size: 20px;
+	line-height: 1;
+}
+
+.review-stars span {
+	color: #ddd;
+}
+
+.review-stars span.active {
+	color: #00cfe8;
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.review-content {
+	flex: 1;
+}
+
+.review-text {
+	margin: 0 0 20px;
+
+	color: #fff;
+
+	font-size: 15px;
+	line-height: 1.55;
+}
+
+.review-name {
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	font-weight: normal;
+	opacity: 0.6;
+}
+
+/* ==========================================
+   SECURITY
+========================================== */
+
+.review-security {
+	margin-top: auto;
+	width: fit-content;
+	height: 24px;
+	color: #00cfe8;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+/* ==========================================
+   RESPONSIVO
+========================================== */
+
+@media (max-width: 767px) {
+	#reviews-section {
+		padding: 40px 0 50px;
+	}
+
+	.reviews-container {
+		width: calc(100% - 32px);
+	}
+
+	.reviews-header {
+		margin-bottom: 30px;
+	}
+
+	.reviews-heading h2 {
+		font-size: 22px;
+	}
+
+	.reviews-heading p {
+		font-size: 13px;
+	}
+
+	.review-arrow {
+		width: 44px;
+		height: 44px;
+
+		border-radius: 15px;
+
+		font-size: 18px;
+	}
+
+	.review-card {
+		min-height: 250px;
+		padding: 25px;
+	}
+}
