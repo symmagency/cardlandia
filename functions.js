@@ -1385,6 +1385,7 @@ $(document).ready(function () {
     }
 
     $('tr[data-produto-id]').addClass('cart-product');
+    $('.pagina-carrinho:not(.carrinho-checkout) .tabela-carrinho').prepend(`<h3>Meu carrinho </h3>`);
 
     // =====================================================
     // ADICIONA BOX SURPRESA
