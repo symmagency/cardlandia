@@ -5237,6 +5237,10 @@ select {
 
 @media screen and (max-width: 767px) {
 
+    #rodape .span4.pagamento, #rodape .span4.selos {
+        padding: 0 16px;
+    }
+
     .resumo-compra .tabela-carrinho .text-right {
         padding: 5px 20px !important;
     }
@@ -6310,8 +6314,9 @@ select {
 
     .assinatura-rodape {
         float: none;
-        width: 100%;
+        width: fit-content;
         text-align: center;
+        margin: 0 auto;
     }
 
     .assinatura .lista-redes {
@@ -6325,6 +6330,8 @@ select {
     #rodape .titulo {
         color: #fff;
         text-align: left;
+        padding: 0 0 20px;
+        font-size: 22px;
     }
 
     #rodape .row-fluid .visible-phone {
@@ -8858,7 +8865,7 @@ div#blog {
         border-radius: 99px;
         padding: 0 16px;
     }
-    
+
     .listagem .mais-vendidos-destaque + ul .info-produto {
         flex-direction: column;
     }
