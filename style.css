@@ -3865,7 +3865,7 @@ div#telefoneRodape {
     height: 54px;
     box-shadow: none;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 99px;
     background: #ffffff05;
     border-color: #ffffff10;
     color: #fff;
@@ -3896,25 +3896,32 @@ div#telefoneRodape {
     content: "\f105";
     float: none;
     font-family: "Fontawesome";
-    line-height: 40px;
-    position: absolute;
-    right: 20px;
-    top: 5px;
+    right: 0;
+    top: 0;
+    position: relative;
 }
 
 .cadastro-logar button.botao {
-    display: block;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 32px;
     height: 60px;
     margin: 10px 0 0;
     font-weight: 600;
     box-sizing: border-box;
     position: relative;
     text-shadow: none;
-    background: #FFA80010 !important;
-    border: 1px solid #FFA800;
+    background: var(--gradiente);
+    border: 0;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 99px !important;
+}
+
+.cadastro-logar > .span6:nth-child(2) button.botao {
+    background: none !important;
+    border: 1px solid var(--cor-da-marca);
 }
 
 .cabecalho-interno .titulo small {

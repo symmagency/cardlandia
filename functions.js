@@ -746,6 +746,8 @@ $(document).ready(function () {
     <li> <img alt="Google Safe Browsing" src="https://cdn.awsli.com.br/1041/1041512/arquivos/google-s-b.png"/ width="127" height="38px"> </li>
     `);
 
+    $('.pagina-login .cabecalho-interno .titulo').html(`Entre na sua conta ou cadastre-se <small>Faça o seu login ou crie uma conta caso ainda não possua cadastro</small>`);
+
         //redes sociais no rodape
         $('.links-rodape-paginas').after($('#rodape .redes-sociais'));
         if (!$('#telefoneRodape').length) {
