@@ -5237,6 +5237,19 @@ select {
 
 @media screen and (max-width: 767px) {
 
+    .produto .conteiner-imagem {
+        display: flex;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        padding: 0 16px;
+        max-height: 180px;
+    }
+
+    .produto .conteiner-imagem img {
+        max-height: 180px;
+    }
+
     #rodape .span4.pagamento, #rodape .span4.selos {
         padding: 0 16px;
     }
