@@ -719,10 +719,17 @@ ul.drop-login li:last-child {
 #cabecalho .carrinho-interno {
     box-shadow: none;
     border: 0;
-    top: 46px;
+    top: 56px;
     padding: 0;
 }
 
+.carrinho-interno li:hover {
+    background: #000;
+}
+
+.carrinho-interno li a:hover {
+    color: #fff;
+}
 
 .carrinho-interno {
     display: none;
@@ -4802,7 +4809,7 @@ form#formCalcularFrete {
     display: block;
     float: none;
     text-align: center;
-    background: #fff;
+    background: transparent;
     padding: 10px 0;
 }
 
