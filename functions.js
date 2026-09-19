@@ -188,15 +188,6 @@ $(document).ready(function () {
                 `);
         }
 
-        $('.produto-detalhe-info').append(`
-            <div class="benefits">
-                <span>Envio por e-mail super rápido.</span>
-                <span>Produtos 100% originais.</span>
-                <span>Pague com Pix ou Boleto bancário.</span>
-                <span>Loja segura com criptografia SSL.</span>
-            </div>
-            `);
-
     // Cabeçalho desktop
     if (isDesktop) {
 
@@ -211,6 +202,15 @@ $(document).ready(function () {
         if ($('.produto .produto-detalhe-info .acoes-produto .preco-produto').length === 0) {
             $('.produto .produto-detalhe-info').append($('.produto .principal .acoes-produto .preco-produto'));
         }
+
+        $('.produto-detalhe-info').append(`
+            <div class="benefits">
+                <span>Envio por e-mail super rápido.</span>
+                <span>Produtos 100% originais.</span>
+                <span>Pague com Pix ou Boleto bancário.</span>
+                <span>Loja segura com criptografia SSL.</span>
+            </div>
+            `);
 
         runDeferred(function () {
 
