@@ -8743,7 +8743,6 @@ div#blog {
 
 #reviews-section {
 	width: 100%;
-	background: #000;
 	padding: 56px 0 72px;
 	overflow: hidden;
 }
@@ -8904,7 +8903,7 @@ div#blog {
 
 	margin-bottom: 25px;
 
-	font-size: 20px;
+	font-size: 15px;
 	line-height: 1;
 }
 
