@@ -1576,7 +1576,7 @@ div#porPreco {
     font-size: 10px;
     border: 0;
     box-shadow: none;
-    border-radius: 3px;
+    border-radius: 99px;
     line-height: 20px;
     text-transform: uppercase;
     background: var(--cor-da-marca);
@@ -1614,7 +1614,7 @@ div#porPreco {
 }
 
 .listagem-item .bandeiras-produto {
-    top: 116px;
+    top: 10px;
 }
 
 .listagem-item .acoes-produto .botao {
@@ -8597,6 +8597,7 @@ div#blog {
     align-items: center;
     padding-right: 0;
     overflow: unset;
+    padding-right: 20px;
 }
 
 .mais-vendidos-destaque + ul .span3 .imagem-produto, .mais-vendidos-destaque + ul.produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
