@@ -1109,6 +1109,14 @@ ul.drop-login li:last-child {
     font-size: 0;
 }
 
+.flex-direction-nav .flex-next {
+    right: -56px;
+}
+
+.flex-direction-nav .flex-prev {
+    left: -56px;
+}
+
 .banner.cheio .flexslider .flex-direction-nav .flex-next:after {
     content: "";
     background: url(https://symmagency.github.io/cardlandia/assets/icones/chev-right.svg) center no-repeat;
@@ -1127,7 +1135,7 @@ ul.drop-login li:last-child {
 
 .secao-banners .conteiner {
     max-width: 1640px;
-    padding: 32px 0;
+    padding: 32px 0 0;
 }
 
 .flexslider {
@@ -8569,7 +8577,7 @@ div#blog {
 @media screen and (max-width: 767px) {
 
     #explore {
-        margin: 24px 0;
+        margin: 0 0 24px;
     }
 
     .explore_items {
