@@ -3055,6 +3055,7 @@ span.bandeira_promo_principal {
     display: flex;
     align-items: center;
     gap: 10px;
+    line-height: 56px;
 }
 
 .benefits span:before {
