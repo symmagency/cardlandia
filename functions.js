@@ -177,12 +177,8 @@ $(document).ready(function () {
                 <div class="produto-detalhe-info"></div>
             `);
         }
-
-        if ($('.pagina-produto .produto div.principal .gateways-rodape').length === 0) {
-            $('.pagina-produto .produto div.principal').append($('#rodape .pagamento .gateways-rodape'));
-        }
         
-        if ($('#principal-konfidency').length === 0) {
+        if ($('#principal-rareviews').length === 0) {
             $('.pagina-produto .produto div.principal').before(`
                 <div id="principal-rareviews">
                     <p>Excelente</p>
@@ -207,7 +203,7 @@ $(document).ready(function () {
         if ($('.produto .produto-detalhe-info .acoes-produto .preco-produto').length === 0) {
             $('.produto .produto-detalhe-info').append($('.produto .principal .acoes-produto .preco-produto'));
         }
-        
+
         runDeferred(function () {
 
             $('#cabecalho').after('<div id="menuCat"><div class="conteiner"><div class="row-fluid"></div></div></div>');
