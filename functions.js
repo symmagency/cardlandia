@@ -196,8 +196,8 @@ $(document).ready(function () {
                     <div class="pgto">
                         <span>Métodos de pagamento confiáveis</span>
                         <ul>
-                            <li><img src="https://cdn.awsli.com.br/2679/2679412/arquivos/boleto.svg" alt="boleto"/></li>
-                            <li><img src="https://cdn.awsli.com.br/2679/2679412/arquivos/pix.svg" alt="google safe"/></li>
+                            <li><img src="https://symmagency.github.io/cardlandia/assets/icones/boleto-rp.svg" alt="boleto"/></li>
+                            <li><img src="https://symmagency.github.io/cardlandia/assets/icones/pix-rp.svg" alt="google safe"/></li>
                         </ul>
                     </div>
                     <div class="seguro">
@@ -1074,22 +1074,16 @@ $(document).ready(function () {
     <div class="envio_rp">
     <p>Formas de envio</p>
     <li>
-    <img src="https://cdn.awsli.com.br/2679/2679412/arquivos/envio_digital.svg" alt="Envio Digital" width="127" height="24px">
-    </li>
-    <li>
-    <img src="https://cdn.awsli.com.br/2679/2679412/arquivos/envio_digital_vip.svg" alt="Envio Digital VIP" width="154" height="24px">
+    <img src="https://symmagency.github.io/cardlandia/assets/icones/envio_digital-rp.svg" alt="Envio Digital" width="127" height="24px">
     </li>
     </div>
     <div class="pagamento_rp">
     <p>Formas de pagamento</p>
     <li>
-    <img src="https://cdn.awsli.com.br/2679/2679412/arquivos/boleto.svg" alt="Boleto Bancário">
+    <img src="https://symmagency.github.io/cardlandia/assets/icones/boleto-rp.svg" alt="Boleto Bancário">
     </li>
     <li>
-    <img src="https://cdn.awsli.com.br/2679/2679412/arquivos/cartao.svg" alt="Cartão de crédito">
-    </li>
-    <li>
-    <img src="https://cdn.awsli.com.br/2679/2679412/arquivos/pix.svg" alt="Pix">
+    <img src="https://symmagency.github.io/cardlandia/assets/icones/pix-rp.svg" alt="Pix">
     </li>
     </div>
     </div>
