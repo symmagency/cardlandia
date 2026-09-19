@@ -780,6 +780,20 @@ $(document).ready(function () {
                 compraUrl: './dy4bfpyl4-/grand-theft-auto-vi-ultimate-edition'
             };
 
+            function youtubeEmbedUrl(url) {
+                if (!url) {
+                    return '';
+                }
+
+                var match = String(url).match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+
+                if (!match) {
+                    return '';
+                }
+
+                return 'https://www.youtube.com/embed/' + match[1] + '?autoplay=1&rel=0';
+            }
+
             $('#listagemProdutos .vitrine-3332079').before(`
                 <div class="videoTrailer">
                     <div class="banner-title">
@@ -811,6 +825,24 @@ $(document).ready(function () {
                     </div>
                 </div>
             `);
+
+            $('.videoTrailer').on('click', '.trailer_play-trigger', function () {
+                var $banner = $(this).closest('.trailer_banner');
+                var embedUrl = youtubeEmbedUrl($(this).attr('data-trailer'));
+
+                if (!embedUrl || $banner.hasClass('is-playing')) {
+                    return;
+                }
+
+                $banner.addClass('is-playing').append(`
+                    <iframe
+                        src="${embedUrl}"
+                        title="${videoTrailer.trailerLabel}"
+                        allow="autoplay; encrypted-media; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                `);
+            });
         }
 
         $('#rodape .institucional').after($('.span4.selos'));
