@@ -5501,6 +5501,15 @@ select {
         margin-bottom: 20px;
     }
 
+    .produto .acoes-produto .preco-produto s.titulo {
+        font-size: 16px !important;
+        margin: 0;
+    }
+
+    .acoes-produto .preco-produto {
+        margin-bottom: 16px;
+    }
+
     .acoes-produto .preco-produto {
         padding: 0;
     }
