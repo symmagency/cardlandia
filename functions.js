@@ -743,7 +743,6 @@ $(document).ready(function () {
 
         $('#rodape .institucional').after($('.span4.selos'));
         $('.span4.selos ul > li:first-child').after(`
-    <li> <img alt="Loja Oficial Mercado Livre" src="https://cdn.awsli.com.br/1041/1041512/arquivos/oficial-ml.png" width="135" height="43px" /> </li>
     <li> <img alt="Google Safe Browsing" src="https://cdn.awsli.com.br/1041/1041512/arquivos/google-s-b.png"/ width="127" height="38px"> </li>
     `);
 
