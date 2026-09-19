@@ -460,6 +460,7 @@ $(document).ready(function () {
 
             }
         }, 500);
+    });
 
     $(function () {
 
