@@ -2197,8 +2197,8 @@ div#categoriasListagem {
 #barraNewsletter .componente .texto-newsletter:before {
     content: "Receba novidades por e-mail";
     display: block;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: normal;
+    font-size: 22px;
     line-height: 20px;
 }
 
@@ -2209,8 +2209,8 @@ div#categoriasListagem {
     left: 0;
     bottom: 0;
     width: 179px;
-    height: 182px;
-    background: url(https://cdn.awsli.com.br/1041/1041512/arquivos/kratos_newsletter.png) center no-repeat;
+    height: 136px;
+    background: url(https://symmagency.github.io/cardlandia/assets/card-c.png) center no-repeat;
 }
 
 #barraNewsletter .componente .interno-conteudo {
@@ -2231,23 +2231,26 @@ div#categoriasListagem {
 #barraNewsletter .componente input[type="text"] {
     margin: 0;
     border: 1px solid #ffffff10;
-    border-radius: 6px;
+    border-radius: 99px;
     box-shadow: none;
     padding: 0 0 0 20px;
     height: 50px;
-    margin-right: 10px;
+    margin-right: -60px;
     background: #26272C;
     font-size: 14px;
     width: 100%;
-    max-width: 503px;
+    max-width: 500px;
 }
 
 #barraNewsletter .componente .newsletter-assinar:before {
-    content: "Receber";
-    display: inline-block;
+    content: "";
+    display: block;
     font-size: 16px;
     font-weight: 600;
     font-family: helvetica;
+    width: 20px;
+    height: 20px;
+    background: url(https://symmagency.github.io/cardlandia/assets/icones/arrow-right.svg) center no-repeat;
 }
 
 #barraNewsletter .componente .newsletter-assinar:after {
@@ -2256,10 +2259,10 @@ div#categoriasListagem {
 
 #barraNewsletter .componente .botao {
     border: 0;
-    border-radius: 6px;
-    padding: 0 20px;
+    border-radius: 99px;
+    padding: 0 30px;
     height: 52px;
-    background: var(--cor-da-marca);
+    background: var(--gradiente);
     transition: all .3s;
     color: #000;
 }
