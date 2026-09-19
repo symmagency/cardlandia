@@ -1287,10 +1287,13 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
+    var $caixaResumo = $('.pagina-carrinho .finalizar-compra > .caixa-sombreada');
+
+    if ($caixaResumo.length && !$caixaResumo.find('.cart-resume').length) {
     // =====================================================
     // CRIA O RESUMO
     // =====================================================
-    $('.finalizar-compra > .caixa-sombreada').append(`
+    $caixaResumo.append(`
       <div class="cart-resume">
         <div class="cart-resume-container">
           <h3>Resumo</h3>
@@ -1383,9 +1386,14 @@ $(document).ready(function () {
             $cupomValor.appendTo($subtotalTarget);
         }
     }
+    }
 
     $('tr[data-produto-id]').addClass('cart-product');
-    $('.pagina-carrinho:not(.carrinho-checkout) .tabela-carrinho').prepend(`<h3>Meu carrinho </h3>`);
+
+    var $tabelaCarrinho = $('.pagina-carrinho:not(.carrinho-checkout) .tabela-carrinho');
+    if ($tabelaCarrinho.length && !$tabelaCarrinho.children('h3').length) {
+        $tabelaCarrinho.prepend('<h3>Meu carrinho </h3>');
+    }
 
     // =====================================================
     // ADICIONA BOX SURPRESA

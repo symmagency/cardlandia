@@ -1915,6 +1915,7 @@ div#porPreco {
     width: 100%;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
 }
 
@@ -5997,7 +5998,7 @@ select {
     }
 
     .menu.superior .nivel-dois {
-        webkit-column-count: 1;
+        -webkit-column-count: 1;
         -moz-column-count: 1;
         column-count: 1;
         border: 0;
@@ -6084,11 +6085,6 @@ select {
     #cabecalho .cab-nav a.icon-user {
         text-align: center;
         font-size: 0px;
-    }
-
-    #cabecalho .cab-nav a.icon-user:before,
-    #cabecalho .cab-nav a.icon-signout:before {
-        /*display: block !important;*/
     }
 
     #cabecalho .cab-nav a.icon-user:after {
@@ -6741,21 +6737,6 @@ select {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 768px) {
-
-    .login-top,
-    .atd-top {
-        padding: 0;
-        width: 127px;
-    }
-
-    #cabecalho.logo-centro .login-top,
-    #cabecalho.logo-centro .carrinho {
-        width: 50px;
-    }
-
-}
-
 /* Atualização 1.1 */
 
 .sugestoes>.titulo {
@@ -6855,6 +6836,12 @@ li.logado-sair a {
     .login-top,
     .atd-top {
         padding: 0;
+        width: 127px;
+    }
+
+    #cabecalho.logo-centro .login-top,
+    #cabecalho.logo-centro .carrinho {
+        width: 50px;
     }
 
     .login-txt strong {
@@ -6883,7 +6870,7 @@ li.logado-sair a {
         margin-top: 8px;
         border: 0;
         border-radius: 6px;
-        background-color: none;
+        background-color: transparent;
     }
 
 }
@@ -7190,7 +7177,7 @@ div#avisoEnvio {
 
 }
 
-@media scree and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
     .produto .conteiner-imagem>div,
     .pagina-produto .zm-viewer {
@@ -7218,6 +7205,7 @@ div#avisoEnvio {
 .titulo_categoria p {
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     margin-top: 12px;
