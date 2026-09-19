@@ -447,7 +447,7 @@ $(document).ready(function () {
                 }
             );
 
-            $('.produto .conteiner-imagem').before($('.produto .span6> .principal .info-principal-produto'));
+            // $('.produto .conteiner-imagem').before($('.produto .span6> .principal .info-principal-produto'));
             $('.atalhos-mobile li.fundo-principal').addClass('cor-principal borda-principal');
             $('.atalhos-mobile li.fundo-principal a').addClass('cor-principal');
             $('#cabecalho .conteiner .logo').after($('.atalhos-mobile li.fundo-principal'));
