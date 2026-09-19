@@ -7860,14 +7860,14 @@ div#avisoEnvio {
         align-items: center;
     }
     
-    input.input-mini {.tabela-carrinho .quantidade
+    input.input-mini, .tabela-carrinho .quantidade
         input[type="text"] {
         background: none;
         color: #fff;
         font-weight: bold;
         padding: 0;
         margin: 0;
-    };
+    }
 
     .cupom-valor strong:first-child {
         display: none;
@@ -9003,8 +9003,6 @@ div#avisoEnvio {
        justify-self: end;
        display: none;
      }
-    
-    }
     
     .carrinho-checkout .search-header {
        display: none;
