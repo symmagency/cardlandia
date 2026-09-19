@@ -3017,6 +3017,42 @@ span.bandeira_promo_principal {
     padding-top: 20px;
 }
 
+.checkout-seguro ul {
+    display: flex;
+    margin: 0;
+    gap: 20px;
+}
+
+.checkout-seguro > div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.checkout-seguro > .pgto {
+    margin-bottom: 20px;
+}
+
+.checkout-seguro > div span {
+    font-size: 12px;
+    color: #fff;
+    opacity: .6;
+}
+
+.checkout-seguro strong {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 32px;
+    display: block;
+}
+
+.checkout-seguro {
+    padding: 24px;
+    background: #202124;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
 .produto-detalhe-info {
     display: flex;
     flex-direction: column;
