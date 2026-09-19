@@ -1741,7 +1741,7 @@ div#porPreco {
     margin: 0;
     border-radius: 6px;
     padding: 0;
-    border: inset 1px;
+    border: 0;
     border-color: rgba(255, 255, 255, .05);
     overflow: hidden;
     transition: all .3s ease;

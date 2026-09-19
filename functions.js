@@ -500,70 +500,70 @@ $(document).ready(function () {
         runDeferred(function () {
             // Defina os dados dos produtos em uma variável JavaScript
             var produtosPopulares = [{
-                url: "https://www.thkeys.com.br/playstation-plus-essential-1-mes-assinatura-brasil-codigo-digital",
+                url: "./playstation-plus-essential-1-mes-assinatura-brasil-codigo-digital",
                 img: "https://cdn.awsli.com.br/1041/1041512/arquivos/p_psn.png",
                 posicao: "1º",
                 titulo: "Playstation Plus Essential 1 Mês Assinatura Brasil - Código Digital",
                 preco: "R$ 59,80 no pix",
                 desconto: "-10%"
             }, {
-                url: "https://www.thkeys.com.br/xbox-game-pass-ultimate-brasil-1-mes-codigo-digital",
+                url: "./xbox-game-pass-ultimate-brasil-1-mes-codigo-digital",
                 img: "https://cdn.awsli.com.br/1041/1041512/arquivos/game-pass.png",
                 posicao: "2º",
                 titulo: "Xbox Game Pass Ultimate Brasil 1 Mês - Código Digital",
                 preco: "R$ 57,90 no pix",
                 desconto: "-10%"
             }, {
-                url: "https://www.thkeys.com.br/playstation-store-r35-reais-brasil-codigo-digital",
+                url: "./playstation-store-r35-reais-brasil-codigo-digital",
                 img: "https://cdn.awsli.com.br/1041/1041512/arquivos/p_psn-store.png",
                 posicao: "3º",
                 titulo: "Playstation Store R$35 Reais - Código Digital",
                 preco: "R$ 34,82 no pix",
                 desconto: "-10%"
             }, {
-                url: "https://www.thkeys.com.br/elden-ring-nightreign-pc-codigo-digital-",
+                url: "./elden-ring-nightreign-pc-codigo-digital-",
                 img: "https://cdn.awsli.com.br/1041/1041512/arquivos/elden.png",
                 posicao: "4º",
                 titulo: "ELDEN RING NIGHTREIGN - PC Código Digital",
                 preco: "R$ 174,90 no pix",
                 desconto: "-10%"
             }, {
-                url: "https://www.thkeys.com.br/cartao-da-app-store-r20-reais-codigo-digital",
+                url: "./cartao-da-app-store-r20-reais-codigo-digital",
                 img: "https://cdn.awsli.com.br/1041/1041512/arquivos/p_apple.png",
                 posicao: "5º",
                 titulo: "Cartão da App Store R$20 Reais - Código Digital",
                 preco: "R$ 24,00 no pix",
                 desconto: "-10%"
             }, {
-                url: "https://www.thkeys.com.br/grand-theft-auto-v-premium-online-edition-rockstar-pc-codigo-digital",
+                url: "./grand-theft-auto-v-premium-online-edition-rockstar-pc-codigo-digital",
                 img: "https://cdn.awsli.com.br/1041/1041512/arquivos/gta-5.png",
                 posicao: "6º",
                 titulo: "Grand Theft Auto V: Premium Online Edition GTA V (Rockstar) - PC Código Digital",
                 preco: "R$ 69,90 no pix",
                 desconto: "-40%"
             }, {
-                url: "https://www.thkeys.com.br/xbox-live-r35-reais-codigo-digital",
+                url: "./xbox-live-r35-reais-codigo-digital",
                 img: "https://cdn.awsli.com.br/1041/1041512/arquivos/xbox-35.png",
                 posicao: "7º",
                 titulo: "Cartão Presente Xbox 35 Reais Brasil - Código Digital",
                 preco: "R$ 34,69 no pix",
                 desconto: "-10%"
             }, {
-                url: "https://www.thkeys.com.br/playstation-store-r100-reais-codigo-digital",
+                url: "./playstation-store-r100-reais-codigo-digital",
                 img: "https://cdn.awsli.com.br/1041/1041512/arquivos/p_psn-store.png",
                 posicao: "8º",
                 titulo: "Playstation Store R$100 Reais - Código Digital",
                 preco: "R$ 98,51 no pix",
                 desconto: "-10%"
             }, {
-                url: "https://www.thkeys.com.br/playstation-store-r300-reais-codigo-digital",
+                url: "./playstation-store-r300-reais-codigo-digital",
                 img: "https://cdn.awsli.com.br/1041/1041512/arquivos/p_psn-store.png",
                 posicao: "9º",
                 titulo: "Playstation Store R$300 Reais - Código Digital",
                 preco: "R$ 284,21 no pix",
                 desconto: "-10%"
             }, {
-                url: "https://www.thkeys.com.br/mortal-kombat-11-standard-edition-pc-codigo-digital",
+                url: "./mortal-kombat-11-standard-edition-pc-codigo-digital",
                 img: "https://cdn.awsli.com.br/1041/1041512/arquivos/mk11.png",
                 posicao: "10º",
                 titulo: "Mortal Kombat 11 - PC Codigo Digital",
@@ -778,12 +778,12 @@ $(document).ready(function () {
     </div>
     <div class="append-dbanners">
     <div class="trailer_banner">
-    <a href="https://www.thkeys.com.br/pc-?sort=%2Bpreco">
+    <a href="./pc-?sort=%2Bpreco">
       <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/oferta-qn.png" alt="">
     </a>
     </div>
     <div class="jogo_banner">
-    <a href="https://www.thkeys.com.br/pc-">
+    <a href="./pc-">
     <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/jogo-brinde-pc.png" alt="">
     <div class="append_preco_btn">
     </div>
@@ -834,7 +834,7 @@ $(document).ready(function () {
     `);
         }
 
-        $('.mini-banner .modulo.span4:first-child').after(`
+$('.mini-banner .modulo.span4:first-child').before(`
     <div id="porPreco">
     <div class="titulo_porpreco">
     <h2>Já sabe quanto vai gastar?</h2>
@@ -844,31 +844,31 @@ $(document).ready(function () {
     <div class="precos">
     <div class="preco_linha">
     <li class="porpreco_item">
-    <a href="https://www.thkeys.com.br/10">R$ 10</a>
+    <a href="./10">R$ 10</a>
     </li>
     <li class="porpreco_item">
-    <a href="https://www.thkeys.com.br/20">R$ 20</a>
+    <a href="./20">R$ 20</a>
     </li>
     <li class="porpreco_item">
-    <a href="https://www.thkeys.com.br/30">R$ 30</a>
+    <a href="./30">R$ 30</a>
     </li>
     <li class="porpreco_item">
-    <a href="https://www.thkeys.com.br/50">R$ 50</a>
+    <a href="./50">R$ 50</a>
     </li>
     </div>
     
     <div class="preco_linha">
     <li class="porpreco_item">
-    <a href="https://www.thkeys.com.br/100">R$ 100</a>
+    <a href="./100">R$ 100</a>
     </li>
     <li class="porpreco_item">
-    <a href="https://www.thkeys.com.br/150">R$ 150</a>
+    <a href="./150">R$ 150</a>
     </li>
     <li class="porpreco_item">
-    <a href="https://www.thkeys.com.br/200">R$ 200</a>
+    <a href="./200">R$ 200</a>
     </li>
     <li class="porpreco_item">
-    <a href="https://www.thkeys.com.br/250">R$ 250</a>
+    <a href="./250">R$ 250</a>
     </li>
     </div>
     </div>
@@ -895,35 +895,35 @@ $(document).ready(function () {
         
         
         <li class="explore_i_cat">
-        <a href="https://www.thkeys.com.br/acao-pc">
+        <a href="./acao-pc">
         <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/icon-c-acao.svg" alt="">
         <span>Ação</span>
         </a>
         </li>
         
         <li class="explore_i_cat">
-        <a href="https://www.thkeys.com.br/aventura-pc">
+        <a href="./aventura-pc">
         <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/icon-c-aventura.svg" alt="">
         <span>Aventura</span>
         </a>
         </li>
         
         <li class="explore_i_cat">
-        <a href="https://www.thkeys.com.br/coop-pc">
+        <a href="./coop-pc">
         <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/icon-c-coop.svg" alt="">
         <span>Co-op</span>
         </a>
         </li>
         
         <li class="explore_i_cat">
-        <a href="https://www.thkeys.com.br/corrida-pc">
+        <a href="./corrida-pc">
         <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/icon-c-corrida.svg" alt="">
         <span>Corrida</span>
         </a>
         </li>
         
         <li class="explore_i_cat">
-        <a href="https://www.thkeys.com.br/esporte-pc">
+        <a href="./esporte-pc">
         <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/icon-c-esporte.svg" alt="">
         <span>Esporte</span>
         </a>
@@ -931,42 +931,42 @@ $(document).ready(function () {
         
         
         <li class="explore_i_cat">
-        <a href="https://www.thkeys.com.br/estrategia-pc">
+        <a href="./estrategia-pc">
         <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/icon-c-estrategia.svg" alt="">
         <span>Estratégia</span>
         </a>
         </li>
         
         <li class="explore_i_cat">
-        <a href="https://www.thkeys.com.br/fps-pc">
+        <a href="./fps-pc">
         <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/icon-c-fps.svg" alt="">
         <span>FPS</span>
         </a>
         </li>
         
         <li class="explore_i_cat">
-        <a href="https://www.thkeys.com.br/hack-slash-pc">
+        <a href="./hack-slash-pc">
         <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/icon-c-slash.svg" alt="">
         <span>Hack & Slash</span>
         </a>
         </li>
         
         <li class="explore_i_cat">
-        <a href="https://www.thkeys.com.br/indie-pc">
+        <a href="./indie-pc">
         <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/icon-c-indie.svg" alt="">
         <span>Indie</span>
         </a>
         </li>
         
         <li class="explore_i_cat">
-        <a href="https://www.thkeys.com.br/luta-pc">
+        <a href="./luta-pc">
         <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/icon-c-luta.svg" alt="">
         <span>Luta</span>
         </a>
         </li>
         
         <li class="explore_i_cat">
-        <a href="https://www.thkeys.com.br/mmo-pc">
+        <a href="./mmo-pc">
         <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/icon-c-mmo.svg" alt="">
         <span>MMO</span>
         </a>
@@ -974,21 +974,21 @@ $(document).ready(function () {
         
         
         <li class="explore_i_cat">
-        <a href="https://www.thkeys.com.br/rpg-pc">
+        <a href="./rpg-pc">
         <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/icon-c-rpg.svg" alt="">
         <span>RPG</span>
         </a>
         </li>
         
         <li class="explore_i_cat">
-        <a href="https://www.thkeys.com.br/simulacao-pc">
+        <a href="./simulacao-pc">
         <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/icon-c-simulacao.svg" alt="">
         <span>Simulação</span>
         </a>
         </li>
         
         <li class="explore_i_cat">
-        <a href="https://www.thkeys.com.br/soulslike-pc">
+        <a href="./soulslike-pc">
         <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/icon-c-soulslike.svg" alt="">
         <span>Soulslike</span>
         </a>
@@ -996,7 +996,7 @@ $(document).ready(function () {
         
         
         <li class="explore_i_cat">
-        <a href="https://www.thkeys.com.br/terror-pc">
+        <a href="./terror-pc">
         <img src="https://cdn.awsli.com.br/1041/1041512/arquivos/icon-c-terror.svg" alt="">
         <span>Terror</span>
         </a>
@@ -1127,7 +1127,7 @@ $(document).ready(function () {
     // =====================================================
 
     var PRODUCT_ID = '398724436';
-    var ADD_URL = 'https://www.thkeys.com.br/carrinho/produto/' + PRODUCT_ID + '/adicionar';
+    var ADD_URL = './carrinho/produto/' + PRODUCT_ID + '/adicionar';
 
     // =====================================================
     // CONTEXTO: apenas página de carrinho (não checkout)
