@@ -1732,7 +1732,7 @@ div#porPreco {
     position: relative;
     opacity: 1;
     padding: 0 12px 12px;
-    display: block;
+    display: none;
     bottom: 0;
 }
 
@@ -1754,7 +1754,10 @@ div#porPreco {
 }
 
 .listagem .info-produto {
-    padding: 24px 24px 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .pagina-produto .listagem .info-produto {
@@ -1811,10 +1814,10 @@ div#porPreco {
 }
 
 .listagem .preco-produto strong.titulo {
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 16px;
     line-height: 100%;
-    color: var(--branco);
+    color: var(--cor-da-marca);
     margin: 11px 0;
 }
 
@@ -1851,7 +1854,7 @@ produto .acoes-produto .preco-parcela strong,
     padding: 0px;
     color: var(--branco);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 35px;
 }
 
@@ -4983,7 +4986,7 @@ select {
     padding: 12px 42px 12px 20px;
     background: #2E3036;
     border: 1px solid #ffffff05;
-    border-radius: 6px;
+    border-radius: 99px;
     float: right;
     font-size: 14px;
     color: #fff;
@@ -4992,6 +4995,7 @@ select {
     background-image: url(https://cdn.awsli.com.br/1041/1041512/arquivos/arrow_outward.svg);
     background-position: 85px;
     background-repeat: no-repeat;
+    background-size: 16px;
 }
 
 @media screen and (max-width: 767px) {
@@ -5889,7 +5893,7 @@ select {
     }
 
     .listagem-item .acoes-produto {
-        display: block !important;
+        display: none !important;
         position: relative;
         opacity: 1;
         float: left;
@@ -8191,7 +8195,7 @@ body {
     border: 0;
     background: var(--color-white);
     padding: 12px;
-    display: flex;
+    display: none;
     gap: 4px;
  }
  
@@ -8236,11 +8240,15 @@ body {
     position: absolute;
     left: -40px;
     z-index: 10;
-    width: 40px;
-    height: 40px;
-    background: var(--icon-chev-left-black) center no-repeat;
-    background-size: 100%;
-    text-indent: -99999px;
+    width: 56px;
+    height: 56px;
+    background-color: #000;
+    background: var(--gradiente);
+    text-indent: -9999px;
+    border-radius: 99px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
  }
  
  .slick-slider .slick-next {
@@ -8249,12 +8257,32 @@ body {
     position: absolute;
     right: -40px;
     z-index: 10;
-      width: 40px;
-    height: 40px;
-    background: var(--icon-chev-right-black) center no-repeat;
-    background-size: 100%;
-    text-indent: -99999px;
- }
+    width: 56px;
+    height: 56px;
+    background-color: #000;
+    background: var(--gradiente);
+    text-indent: -9999px;
+    border-radius: 99px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-slider .slick-next:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(https://symmagency.github.io/cardlandia/assets/icones/chev-right.svg) center no-repeat;
+    display: flex;
+}
+
+.slick-slider .slick-prev:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(https://symmagency.github.io/cardlandia/assets/icones/chev-left.svg) center no-repeat;
+    display: flex;
+}
 
  @media screen and (max-width: 768px) {
 
