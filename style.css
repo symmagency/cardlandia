@@ -1705,7 +1705,7 @@ div#porPreco {
 .trailer_banner,
 .jogo_banner {
     position: relative;
-    min-height: 320px;
+    min-height: 500px;
     overflow: hidden;
     background: #2A2B30;
     border-radius: 16px;
@@ -5867,23 +5867,6 @@ select {
         font-weight: bold;
         background: none;
         color: #fff;
-    }
-
-    #cabecalho .cab-nav {
-        background: var(--fundo-cabecalho);
-        z-index: 1000;
-        display: flex;
-        align-items: center;
-        height: 107px;
-        flex-direction: column-reverse;
-        align-items: flex-start;
-    }
-
-
-    li.logado-sair a {
-        color: var(--texto-cabecalho);
-        font-size: 16px !important;
-        margin-left: 0;
     }
 
     #cabecalho .acc-nav a.icon-shopping-cart {

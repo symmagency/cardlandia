@@ -941,82 +941,107 @@ $(document).ready(function () {
     
     
 
-        if (!$('.videoTrailer').length && $('#listagemProdutos .vitrine-3332079').length) {
-            var videoTrailer = {
+        $(function () {
+
+            var config = {
+                vitrine: '.vitrine-22673250',
                 titulo: 'Ofertas em destaque',
                 subtitulo: 'Jogos selecionados pela THKeys.',
-                trailerLabel: 'Assista ao trailer',
-                trailerUrl: 'https://www.youtube.com/watch?v=cv041_93_0Q',
+                trailer: 'https://www.youtube.com/watch?v=cv041_93_0Q',
                 preco: 'R$ 299,99',
-                precoSufixo: 'no pix',
-                compraLabel: 'Comprar agora',
-                compraUrl: './dy4bfpyl4-/grand-theft-auto-vi-ultimate-edition'
+                sufixo: 'no pix',
+                link: '/dy4bfpyl4-/grand-theft-auto-vi-ultimate-edition'
             };
-
-            function youtubeEmbedUrl(url) {
-                if (!url) {
-                    return '';
-                }
-
-                var match = String(url).match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
-
-                if (!match) {
-                    return '';
-                }
-
-                return 'https://www.youtube.com/embed/' + match[1] + '?autoplay=1&rel=0';
-            }
-
-            $('#listagemProdutos .vitrine-3332079').before(`
-                <div class="videoTrailer">
-                    <div class="banner-title">
-                        <strong>${videoTrailer.titulo}</strong>
-                        <span>${videoTrailer.subtitulo}</span>
-                    </div>
-                    <div class="append-dbanners">
-                        <div class="trailer_banner">
-                            <button type="button" class="trailer_play-trigger" aria-label="${videoTrailer.trailerLabel}" data-trailer="${videoTrailer.trailerUrl}">
-                                <span class="trailer_play-icon" aria-hidden="true"></span>
-                                <span class="trailer_play-label">${videoTrailer.trailerLabel}</span>
-                            </button>
+        
+            var timer = setInterval(function () {
+        
+                var $vitrine = $(config.vitrine).first();
+        
+                if (!$vitrine.length || $('.videoTrailer').length) return;
+        
+                $vitrine.before(`
+                    <div class="videoTrailer">
+        
+                        <div class="banner-title">
+                            <strong>${config.titulo}</strong>
+                            <span>${config.subtitulo}</span>
                         </div>
-                        <div class="jogo_banner">
-                            <div class="append_preco_btn">
-                                <div class="preco">
-                                    <span class="preco-diamond" aria-hidden="true"></span>
-                                    <strong>${videoTrailer.preco}</strong>
-                                    <span>${videoTrailer.precoSufixo}</span>
-                                </div>
-                                <a class="btn" href="${videoTrailer.compraUrl}">
-                                    ${videoTrailer.compraLabel}
-                                    <svg class="btn-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                                        <path d="M3 9L9 3M9 3H4.5M9 3V7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
+        
+                        <div class="append-dbanners">
+        
+                            <div class="trailer_banner">
+        
+                                <button
+                                    class="trailer_play-trigger"
+                                    data-video="${config.trailer}"
+                                >
+                                    <span class="trailer_play-icon"></span>
+                                    <span class="trailer_play-label">
+                                        Assista ao trailer
+                                    </span>
+                                </button>
+        
                             </div>
+        
+                            <div class="jogo_banner">
+        
+                                <div class="append_preco_btn">
+        
+                                    <div class="preco">
+                                        <span class="preco-diamond"></span>
+                                        <strong>${config.preco}</strong>
+                                        <span>${config.sufixo}</span>
+                                    </div>
+        
+                                    <a class="btn" href="${config.link}">
+                                        Comprar agora
+        
+                                        <svg width="12" height="12" viewBox="0 0 12 12">
+                                            <path
+                                                d="M3 9L9 3M9 3H4.5M9 3V7.5"
+                                                stroke="currentColor"
+                                                fill="none"
+                                            />
+                                        </svg>
+                                    </a>
+        
+                                </div>
+        
+                            </div>
+        
                         </div>
+        
                     </div>
-                </div>
-            `);
-
-            $('.videoTrailer').on('click', '.trailer_play-trigger', function () {
-                var $banner = $(this).closest('.trailer_banner');
-                var embedUrl = youtubeEmbedUrl($(this).attr('data-trailer'));
-
-                if (!embedUrl || $banner.hasClass('is-playing')) {
-                    return;
-                }
-
-                $banner.addClass('is-playing').append(`
-                    <iframe
-                        src="${embedUrl}"
-                        title="${videoTrailer.trailerLabel}"
-                        allow="autoplay; encrypted-media; picture-in-picture"
-                        allowfullscreen
-                    ></iframe>
                 `);
+        
+                clearInterval(timer);
+        
+            }, 300);
+        
+        
+            $(document).on('click', '.trailer_play-trigger', function () {
+        
+                var $banner = $(this).closest('.trailer_banner');
+        
+                var id = $(this)
+                    .data('video')
+                    .split('v=')[1]
+                    .split('&')[0];
+        
+                $banner
+                    .addClass('is-playing')
+                    .html(`
+                        <iframe
+                            src="https://www.youtube.com/embed/${id}?autoplay=1&rel=0"
+                            frameborder="0"
+                            allow="autoplay; encrypted-media; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    `);
+        
             });
-        }
+        
+        });
 
         $(function () {
             var $container = $('#listagemProdutos');
