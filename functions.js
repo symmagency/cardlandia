@@ -236,19 +236,19 @@ $(document).ready(function () {
             </div>
             `);
 
+        if (!$('.pagina-inicial .mini-banner #miniBannerFullw').length) {
+            $('.pagina-inicial .mini-banner').prepend('<div id="miniBannerFullw" class="conteiner"></div>');
+            $('.pagina-inicial .mini-banner .modulo.span4').appendTo($('#miniBannerFullw'));
+        }
+
+        if ($('#miniBannerFullw').length && $('#listagemProdutos .vitrine-22673218').length) {
+            $('#listagemProdutos .vitrine-22673218').before($('#miniBannerFullw'));
+        }
+
         runDeferred(function () {
 
             $('#cabecalho').after('<div id="menuCat"><div class="conteiner"><div class="row-fluid"></div></div></div>');
             $('#menuCat .row-fluid').append($('#cabecalho .menu.superior'));
-
-            if (!$('.pagina-inicial .mini-banner #miniBannerFullw').length) {
-                $('.pagina-inicial .mini-banner').prepend('<div id="miniBannerFullw" class="conteiner"></div>');
-                $('.pagina-inicial .mini-banner .modulo.span4').appendTo($('#miniBannerFullw'));
-            }
-
-            if ($('#miniBannerFullw').length && $('#listagemProdutos .vitrine-22673218').length) {
-                $('#listagemProdutos .vitrine-22673218').before($('#miniBannerFullw'));
-            }
 
             $('.pagina-inicial #listagemProdutos > ul:nth-child(2)').after($('.banner.tarja'));
             $('.pagina-busca .listagem > .titulo').appendTo('.pagina-busca .ordenar-listagem.topo');
