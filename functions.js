@@ -246,6 +246,10 @@ $(document).ready(function () {
                 $('.pagina-inicial .mini-banner .modulo.span4').appendTo($('#miniBannerFullw'));
             }
 
+            if ($('#miniBannerFullw').length && $('#listagemProdutos .vitrine-22673218').length) {
+                $('#listagemProdutos .vitrine-22673218').before($('#miniBannerFullw'));
+            }
+
             $('.pagina-inicial #listagemProdutos > ul:nth-child(2)').after($('.banner.tarja'));
             $('.pagina-busca .listagem > .titulo').appendTo('.pagina-busca .ordenar-listagem.topo');
 
@@ -1284,9 +1288,6 @@ $(document).ready(function () {
         }
     });
 
-    if ($('#miniBannerFullw').length && $('#listagemProdutos .vitrine-22673218').length) {
-        $('#listagemProdutos .vitrine-22673218').before($('#miniBannerFullw'));
-    }
 
 
 });
