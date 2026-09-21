@@ -100,11 +100,27 @@
 
     function initDesktopHeader() {
       if (!desktop) return;
-      if (!$('.pagina-inicial .mini-banner #miniBannerFullw').length) {
-        $('.pagina-inicial .mini-banner').prepend('<div id="miniBannerFullw" class="conteiner"></div>');
-        $('.pagina-inicial .mini-banner .modulo.span4').appendTo('#miniBannerFullw');
+
+      function mountMiniBanners() {
+        var $source = $('.pagina-inicial .mini-banner');
+        var $target = $('#listagemProdutos .vitrine-22673218').first();
+        var $wrapper = $('#miniBannerFullw');
+
+        if (!$source.length) return;
+
+        if (!$wrapper.length) {
+          $wrapper = $('<div id="miniBannerFullw" class="conteiner"></div>');
+        }
+
+        // Posiciona o container uma única vez e preserva a ordem dos banners.
+        if ($target.length) $wrapper.insertBefore($target);
+        else if (!$wrapper.parent().length) $source.prepend($wrapper);
+
+        $source.children('.modulo.span4').appendTo($wrapper);
       }
-      if ($('#listagemProdutos .vitrine-22673218').length) $('#listagemProdutos .vitrine-22673218').before($('#miniBannerFullw'));
+
+      mountMiniBanners();
+      later(mountMiniBanners);
 
       later(function () {
         once('#menuCat', '#cabecalho', '<div id="menuCat"><div class="conteiner"><div class="row-fluid"></div></div></div>', 'after');
@@ -252,7 +268,7 @@
     }
 
     function initPriceFinder() {
-      var $target = $('.mini-banner .modulo.span4:first-child');
+      var $target = $('#miniBannerFullw .modulo.span4:first-child, .mini-banner .modulo.span4:first-child').first();
       if (!$target.length || $('#porPreco').length) return;
       var items = C.porPreco.valores.map(function (v) { return '<li class="porpreco_item"><a href="./' + v + '"><span>R$</span> <strong>' + v + '</strong></a></li>'; });
       var half = Math.ceil(items.length / 2);
