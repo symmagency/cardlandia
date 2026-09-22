@@ -268,60 +268,24 @@
     }
 
     function initPriceFinder() {
-      var $target = $(
-        '#miniBannerFullw .modulo.span4\\:first-child, ' +
-        '.mini-banner .modulo.span4\\:first-child'
-      ).first();
-    
+      var $target = $('#miniBannerFullw .modulo.span4:first-child, .mini-banner .modulo.span4:first-child').first();
       if (!$target.length || $('#porPreco').length) return;
-    
-      var items = C.porPreco.valores.map(function (valor, index) {
-        var minimo = index === 0
-          ? 0
-          : C.porPreco.valores[index - 1] + 0.01;
-    
-        var maximo = valor;
-    
-        var faixa = minimo.toFixed(2) + '-' + maximo.toFixed(2);
-    
-        var url = '/buscar?q=+&fq=' + encodeURIComponent(
-          'price_range:' + faixa
-        );
-    
+      var items = C.porPreco.valores.map(function (item) {
         return `
           <li class="porpreco_item">
-            <a href="${url}">
+            <a href="${item.link}">
               <span>R$</span>
-              <strong>${valor}</strong>
+              <strong>${item.valor}</strong>
             </a>
           </li>
         `;
       });
-    
       var half = Math.ceil(items.length / 2);
-    
-      $target.before(`
-        <div id="porPreco">
-          <div class="titulo_porpreco">
-            <h2>${C.porPreco.titulo}</h2>
-            <p>${C.porPreco.subtitulo}</p>
-          </div>
-    
-          <div class="precos">
-            <ul class="preco_linha">
-              ${items.slice(0, half).join('')}
-            </ul>
-    
-            <ul class="preco_linha">
-              ${items.slice(half).join('')}
-            </ul>
-          </div>
-        </div>
-      `);
-    
+      $target.before('<div id="porPreco"><div class="titulo_porpreco"><h2>' + C.porPreco.titulo + '</h2><p>' + C.porPreco.subtitulo + '</p></div><div class="precos"><ul class="preco_linha">' + items.slice(0, half).join('') + '</ul><ul class="preco_linha">' + items.slice(half).join('') + '</ul></div></div>');
+
+      // Move #miniBannerFullw antes do .vitrine-mas-vendido
       var $miniBanner = $('#miniBannerFullw');
       var $vitrineMaisVendido = $('.vitrine-mas-vendido').first();
-    
       if ($miniBanner.length && $vitrineMaisVendido.length) {
         $miniBanner.insertBefore($vitrineMaisVendido);
       }

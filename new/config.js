@@ -104,7 +104,41 @@ window.THKEYS_CONFIG = {
   porPreco: {
     titulo: 'Já sabe quanto vai gastar?',
     subtitulo: 'Encontre produtos por faixa de preço',
-    valores: [10, 20, 30, 50, 100, 150, 200, 250]
+  
+    valores: [
+      {
+        valor: 10,
+        link: '/buscar?q=+&fq=price_range%3A0.0-10.0'
+      },
+      {
+        valor: 20,
+        link: '/buscar?q=+&fq=price_range%3A10.01-20.0'
+      },
+      {
+        valor: 30,
+        link: '/buscar?q=+&fq=price_range%3A20.01-30.0'
+      },
+      {
+        valor: 50,
+        link: '/buscar?q=+&fq=price_range%3A30.01-50.0'
+      },
+      {
+        valor: 100,
+        link: '/buscar?q=+&fq=price_range%3A50.01-100.0'
+      },
+      {
+        valor: 150,
+        link: '/buscar?q=+&fq=price_range%3A100.01-150.0'
+      },
+      {
+        valor: 200,
+        link: '/buscar?q=+&fq=price_range%3A150.01-200.0'
+      },
+      {
+        valor: 250,
+        link: '/buscar?q=+&fq=price_range%3A200.01-250.0'
+      }
+    ]
   },
 
   rodape: {
