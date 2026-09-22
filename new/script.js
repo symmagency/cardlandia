@@ -346,5 +346,8 @@
       if (src) $(this).attr('src', src.replace('/400x400/', '/800x800/')).attr('data-src', function (_, value) { return value ? value.replace('/400x400/', '/800x800/') : value; });
     });
     $('.pagina-login .cabecalho-interno .titulo').html('Entre na sua conta ou cadastre-se <small>Faça o seu login ou crie uma conta caso ainda não possua cadastro</small>');
+
+    $('.produto .conteiner-imagem>div:not(.produto-detalhe-info)').append($('.produto-thumbs.thumbs-horizontal'));
+    $('.pagina-produto #abreZoom').remove();
   });
 })(jQuery, window, document);
