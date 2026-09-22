@@ -95,7 +95,7 @@ window.THKEYS_CONFIG = {
     titulo: 'Jogo em destaque',
     subtitulo: 'Selecionado pela CardLândia',
     video: 'https://www.youtube.com/watch?v=cv041_93_0Q',
-    preco: 'R$ 299,99',
+    preco: 'R$ 533,00',
     sufixo: 'no pix',
     botao: 'Comprar agora',
     link: '/dy4bfpyl4-/grand-theft-auto-vi-ultimate-edition'
