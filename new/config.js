@@ -9,12 +9,12 @@ window.THKEYS_CONFIG = {
   banners: {
     inserirDepoisDe: '.pagina-inicial .secao-banners',
     itens: [
-      ['apple.png', 'apple-m.png', '/app-store', 'Apple'],
+      ['apple.png', 'apple-m.png', '/apple-store', 'Apple'],
       ['google-play.png', 'google-play-m.png', '/google-play', 'Google Play'],
-      ['playstation.png', 'playstation-m.png', '/gift-playstation', 'PlayStation'],
+      ['playstation.png', 'playstation-m.png', '/cartoes-presente-playstation', 'PlayStation'],
       ['razer-gold.png', 'razer-gold-m.png', '/buscar?q=razer+gold', 'Razer Gold'],
-      ['steam.png', 'steam-m.png', '/pc-', 'Steam'],
-      ['xbox.png', 'xbox-m.png', '/gift-xbox', 'Xbox']
+      ['steam.png', 'steam-m.png', '/steam-card-prepago', 'Steam'],
+      ['xbox.png', 'xbox-m.png', '/cartao-presente-xbox', 'Xbox']
     ]
   },
 
