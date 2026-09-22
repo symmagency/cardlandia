@@ -1,0 +1,541 @@
+<script>
+// Configuração inicial - Grand Store Games
+var avisoConfig = ''; // Nao mexer
+var v = 2;
+
+////// Configurações gerais
+var logoDesktop = 200;
+var logoMobile = 38;
+var desejos = true;
+var desejosIcone = 'desejosIcone1';
+var desejosTxt = 'Desejos';
+var desejosAdd = 'Adicionar aos desejos';
+var sCart = false;
+var carrinhoIcone = 'carrinhoIcone2';
+var alertaF = false;
+var alertaTxt = 'FRETE GRÁTIS';
+var alertaSD = '';
+var alertaSL = '';
+var alertaCO = '';
+var alertaNE = '';
+var alertaNT = '';
+var alerta1 = '';
+var alerta11 = '';
+var alerta1V = '';
+var alerta2 = '';
+var alerta22 = '';
+var alerta2V = '';
+var alerta3 = '';
+var alerta33 = '';
+var alerta3V = '';
+var rastreioRapido = 1;
+var topoFlutuante = true;
+var infoDestaque = false;
+var infoDestaqueIcone = 'iconeMotoboy';
+var infoDestaqueTxt = 'Pague suas compras com PIX';
+var infoDestaqueTxt2 = 'e ganhe 10% de desconto';
+var infoDestaqueLink = '';
+var marcasSingular = 'Marca';
+var marcasPlural = 'Marcas';
+var marcasCarrosselTxt = 'Escolha pela marca';
+var marcasCarrosselAuto = true;
+var notificacao = false;
+var notificacaoD = 1;
+
+////// Atendimento
+var suporte = 2;
+var suporteLado = 1;
+var suporteAltura = 20;
+var suporteDistancia = 20;
+
+// Whatsapp
+var wpTxt = 'Estamos no whatsapp';
+var wp1 = '(79) 99933-8368';
+var wp1i = '';
+var wp1d = 'Vendas';
+var wp1m = 'Olá, gostaria de tirar uma dúvida. Poderiam me ajudar?';
+var wp1a = ''; 
+var wp2 = '';
+var wp2i = '';
+var wp2d = '';
+var wp2m = '';
+var wp2a = '';
+var wp3 = '';
+var wp3i = '';
+var wp3d = '';
+var wp3m = '';
+var wp3a = '';
+var telTxt = 'Compre por telefone';
+var tel1 = '(79) 99933-8368';
+var tel1i = '';
+var tel2 = '';
+var tel2i = '';
+var tel3 = '';
+var tel3i = '';
+var mailTxt = 'Envie uma mensagem';
+var mailN = 15;
+var mail1 = 'contato@cardlandia.com.br';
+var mail1i = '';
+var mail2 = '';
+var mail2i = '';
+var mail3 = '';
+var mail3i = '';
+
+
+
+
+
+
+
+var h1 = 'seg a sex das 8h às 00h';
+var h2 = 'sab das 8h às 00h';
+var h3 = '';
+
+////// Menu Superior
+var categorias = 8; 
+var menuModelo = 2;
+var menuAbertura = 4;
+
+var produtosMenu = true;
+
+var todasCategorias = false;
+var todasCategoriasTxt = 'Todas as categorias';
+
+var iconesCategorias = true;
+var iconesCategoriasTamanho = 30;
+var iconeCategoria1 = 'https://cdn.awsli.com.br/22/22652/arquivos/icon gift card.png';
+var iconeCategoria2 = 'https://cdn.awsli.com.br/22/22652/arquivos/icon celular.png';
+var iconeCategoria3 = 'https://cdn.awsli.com.br/22/22652/arquivos/icon pc.png';
+var iconeCategoria4 = 'https://cdn.awsli.com.br/22/22652/arquivos/icon xbox.png';
+var iconeCategoria5 = 'https://cdn.awsli.com.br/22/22652/arquivos/icon%20nintendo.png';
+var iconeCategoria6 = 'https://cdn.awsli.com.br/22/22652/arquivos/icon-playstation.png';
+var iconeCategoria7 = 'https://cdn.awsli.com.br/22/22652/arquivos/icon promotions.png';
+var iconeCategoria8 = '';
+var iconeCategoria9 = '';
+var iconeCategoria10 = '';
+
+var paginaMenu1 = '';
+var paginaMenu1Link = '';
+var paginaMenu2 = '';
+var paginaMenu2Link = '';
+var paginaMenu3 = '';
+var paginaMenu3Link = '';
+
+////// Ofertas
+var ofertas = false;
+var ofertasTitulo = 'Promoções';
+var iconeOfertas = 'iconeOfertas5';
+var ofertasTxt = 'Somente hoje!!';
+var ofertasSub = 'Aproveite nossas ofertas com 30% de desconto';
+var ofertasListagem = true;
+var ofertasID = '15397244';
+var ofertasTimer = true;
+var ofertasTimerData = '10/10/2021';
+
+////// Banners
+var fullFundo = 'https://cdn.awsli.com.br/1929/1929647/arquivos/fundobanner1.png';
+var tarjaAvancado = true;
+var tarja1Icone = 'iconeArquivo';
+var tarja1Txt = 'Envio por Email';
+var tarja1Sub = 'Super Rápido';
+var tarja1Link = '';
+var tarja2Icone = 'iconeEstrela';
+var tarja2Txt = 'Confiabilidade';
+var tarja2Sub = 'Produtos 100% Originais';
+var tarja2Link = '';
+var tarja3Icone = 'iconePix';
+var tarja3Txt = '10% Desconto No Pix';
+var tarja3Sub = '';
+var tarja3Link = '';
+var tarja4Icone = 'iconeSeguranca';
+var tarja4Txt = 'Loja Segura';
+var tarja4Sub = 'Proteção SSL';
+var tarja4Link = '';
+var escolhaTxt = 'Escolha por categoria';
+var escolhaImg = 8;
+
+////// Listagem
+var fixarImagem = true;
+var prodTxt = 2;
+var fixarAdicionar = false;
+var adicionar = 'Adicionar';
+var produtosCarrossel = true;
+var produtosCarrosselAuto = false;
+var produtosLinhaDesktop = 4;
+var produtosLinhaMobile = 2;
+var precoC = false;
+var precoP = false;
+var precoA = false;
+var comprarWhatsapp = false;
+var comprarWhatsappT = 'Comprar pelo whatsapp';
+var comprarWhatsappM = 'Olá, pode me ajudar? Eu gostaria de mais informações para a compra do produto:';
+var comprarWhatsappV = false;
+var comprarWhatsappC = false;
+var bP = false;
+var bPCEP = true;
+var bPFrete = true;
+var bPp1 = '';
+var bPt1 = '';
+var bPd1 = '';
+var bPp2 = '';
+var bPt2 = '';
+var bPd2 = '';
+var bPp3 = '';
+var bPt3 = '';
+var bPd3 = '';
+var tituloLancamentos = 'Lançamentos';
+var tituloVendidos = 'Mais vendidos';
+var tituloDestaques = 'Destaques';
+
+////// Video
+var videoDestaque = false;
+var videoTxt = '';
+var videoLink = '';
+var videoProduto = true;
+var videoProdutoTxt = 'Produtos no vídeo';
+var videoProdutoAuto = true;
+
+////// Depoimentos
+var depoimentos = false;
+var depoimentosAuto = false;
+var depoimentosTxt = 'Quem já comprou e recomenda';
+
+var dep1Avatar = '';
+var dep1Msg = 'Recebi bem rápido, recomendo';
+var dep1Nome = 'Pedro Henrique - São Paulo/SP';
+var dep1Link = 'https://google.com.br';
+
+var dep2Avatar = '';
+var dep2Msg = '';
+var dep2Nome = '';
+var dep2Link = '';
+
+var dep3Avatar = '';
+var dep3Msg = '';
+var dep3Nome = '';
+var dep3Link = '';
+
+var dep4Avatar = '';
+var dep4Msg = '';
+var dep4Nome = '';
+var dep4Link = '';
+
+var dep5Avatar = '';
+var dep5Msg = '';
+var dep5Nome = '';
+var dep5Link = '';
+
+////// Blog
+var blog = false;
+var blogData = true;
+var blogResumo = true;
+var blogComentarios = true;
+var blogCompartilhar = true;
+var blogFeed = false;
+var blogFeedTxt = 'Últimas postagens';
+var blogAutor = false;
+var autor1Avatar = 'https://cdn.awsli.com.br/1808/1808111/arquivos/author.png';
+var autor1 = 'Luiz Carlos';
+var autor1Bio = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis, lorem at condimentum molestie, quam lacus auctor metus, at laoreet magna neque et turpis.';
+var autor2Avatar = '';
+var autor2 = '';
+var autor2Bio = '';
+var autor3Avatar = '';
+var autor3 = '';
+var autor3Bio = '';
+
+////// Newsletter
+var cupomNewsletter = '';
+var imgNewsletter = '';
+
+////// Redes Sociais
+var instaF = false;
+var instaTxt = 'Gostou? Segue a gente';
+var instaT = '';
+var facebookBox = true;
+
+////// Rodape
+var rodapeLogo = '';
+var rodapeEndereco = '';
+
+var rodapeSocial = 'Redes sociais';
+var rodapeSobre = 'Sobre nós';
+var rodapePaginas = 'Institucional';
+var rodapePagamento = 'Formas de pagamento';
+var rodapeSelos = 'Selos de segurança';
+
+var formasEnvio = true;
+var formasEnvioTxt = 'Formas de envio';
+var formaEnvio1 = 'https://cdn.awsli.com.br/22/22652/arquivos/emailzz.jpg';
+var formaEnvio2 = '';
+var formaEnvio3 = '';
+
+////// Pagina do produto
+var imagemProduto = 500;
+var compartilhamento = true;
+var resumoFlutuante = true;
+var calculadoraFrete = false;
+var codigoTxt = 'Cód';
+var disponibilidadeTxt = 'Enviamos os códigos todos os dias da semana, receba de forma rápida e segura em seu E-MAIL, fique atento a caixa de ENTRADA e SPAM.';
+var descricaoTxt = 'Descrição';
+var relacionadosTxt = 'Aproveite e compre também';
+var variacaoCor = true;
+var variacaoTxt = 'Primeiro você deve escolher uma opção.';
+var descricaoCurta = true;
+var pagamentoCompacto = true;
+var pagamentoTxt = 'mais formas de pagamento';
+
+
+
+
+  
+var personalizador = false;
+var peU = 'https://www.file.io/';
+var pe1T = 1;
+var pe1P = '';
+var pe1Txt = '';
+var pe1O = 1;
+var pe1L = 100;
+var pe1Obg = false;
+var pe1Aux = '';
+var pe1V1 = '';
+var pe1V2 = '';
+var pe1V3 = '';
+var pe2T = 1;
+var pe2P = '';
+var pe2Txt = '';
+var pe2O = 1;
+var pe2L = 100;
+var pe2Obg = false;
+var pe2Aux = '';
+var pe2V1 = '';
+var pe2V2 = '';
+var pe2V3 = '';
+
+var tabelaMedidas = false;
+var tabelaMedidasProduto = true;
+var tabelaNome = '';
+var tabelaImg1 = '';
+var tabelaPalavra1 = '';
+var tabelaImg2 = '';
+var tabelaPalavra2 = '';
+var tabelaImg3 = '';
+var tabelaPalavra3 = '';
+
+var validade = false;
+var validadeTxt = 'Validade:';
+var validadeA = 'Perto do vencimento';
+var validadeD = 30;
+
+var prevenda = false;
+var prevendaTxt = 'Pré-Venda';
+var prevendaTxt2 = 'Lançamento:';
+var prevendaTxt3 = 'O envio é feito em até 48h após o lançamento.';
+var prevendaC = true;
+
+var calc = false;
+var calcPalavra = 'papel de parede';
+var calcObj = 'rolos';
+var calcA = 1.5;
+var calcL = 0.53;
+var calcDuvida = '/pagina/como-medir.html';
+
+var cModelo = 2;
+var cFundoEscuro = true;
+var cOfertasFundo = true;
+var csOfertasFundo = true;
+
+var alertaV = 2;
+var lEx = false;
+var varL = false;
+var ebPx = false;
+var ebPP = '';
+var ebPV = 4;
+var ccL = 1;
+var ccE = false;
+var ccS = false;
+var agE = false;
+var agEH = 1;
+var agED = 1;
+var agET = 0;
+var agEN = '14/11/2022';
+var dPx = false;
+var dPN = '';
+var dPxE = 1;
+var dPP = '';
+var dPV = 1;
+var dPT = 1;
+var dP1q = 1;
+var dP1d = 1;
+var dP1c = '';
+var dP2q = 1;
+var dP2d = 1;
+var dP2c = '';
+var dP3q = 1;
+var dP3d = 1;
+var dP3c = '';
+var cCart = false;
+var cCartT = 1;
+var cCartQ = 5;
+var cCartC = '';
+var cCartB = '';
+var calcTxt = '';
+var calcATxt = 'Altura da parede';
+var calcLTxt = 'Largura da parede';
+
+
+var peB = 'Personalize';
+var peBT = 'Personalizar';
+var pe1F = '';
+var pe2F = '';
+var instaV = false;
+var instaR = false;
+var pimgM = 1;
+var pimgT = 108;
+var desc = 1;
+var bx = false;
+var avD = true;
+var avT = 1;
+var avIc = 'ic1';
+var avTxt = 'à vista';
+var avDesc = 5;
+var fale = false;
+var faleTxt = 'Enviar mensagem';
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Maven Pro:wght@400;500;700" rel="stylesheet">
+
+<style>
+
+/* Cores */
+:root {
+--cdP:#1d4b9f;
+--csCorPrincipal:#7f4ac5;
+--csBotoes:#ff943f;
+--csSuporte:#7f4ac5;
+--csSuporteIcone:#ffffff;
+--csInfoDestaque:#6d3dad;
+--csInfoDestaqueTxt:#ffffff;
+--csCab:#7f4ac5;
+--csCabTxt:#ffffff;
+--csBusca:#6d3dad;
+--csBuscaTxt:#ffffff;
+--csCarrinhoqtd:#ff943f;
+--csCarrinhoqtdn:#ffffff;
+--csMenu:#ffffff;
+--csMenuTxt:#7f4ac5;
+--csTodasCategorias:#ff943f;
+--csOfertas:#6a329f;
+--csOfertasTxt:#ff943f;
+--csBandeiraDesconto:#1ac7ba;
+--csBp1:#ee8403;
+--csBp2:#4a93d4;
+--csBp3:#6aa84f;
+
+--cFundo:#181818;
+--cBotoes:#36c5c4;
+--cBotoesTxt:#ffffff;
+--cTitulos:#ffffff;
+--cAlerta:#36c5c4;
+--cSuporte:#36c5c4;
+--cSuporteIcone:#181818;
+--cBarra:#181818;
+--cBarraTxt:#ffffff;
+--cInfoDestaque:#242424;
+--cInfoDestaqueIcone:#36c5c4;
+--cInfoDestaqueTxt:#ffffff;
+--cCab:#181818;
+--cCabIcones:#36c5c4;
+--cCabTxt:#ffffff;
+--cBusca:#242424;
+--cBuscaTxt:#ffffff;
+--cCarrinhoqtd:#36c5c4;
+--cCarrinhoqtdn:#181818;
+--cMenu:#242424;
+--cMenuTxt:#ffffff;
+--cTodasCategoriasIcone:#6d2e46;
+--cTodasCategoriasTxt:#a26769;
+--cOfertas:#202020;
+--cOfertasTxt:#e3c03a;
+--cOfertasT:#e3c03a;
+--cOfertasL:#181818;
+--cOfertasLTxt:#36c5c4;
+--cBannerF:#242424;
+--cBannerN:#ffffff;
+--cBannerP:#36c5c4;
+--cBannerB:#36c5c4;
+--cBannerBTxt:#242424;
+--cTarja:#242424;
+--cTarjaIcone:#36c5c4;
+--cTarjaTxt:#36c5c4;
+--cTarjaSub:#ffffff;
+--cPreco:#36c5c4;
+--cPix:#820263;
+--cPixIcone:#d90368;
+--cPixTxt:#d90368;
+--cBotaoWP:#ffffff;
+--cBotaoWPTxt:#181818;
+--cBotaoWPBorda:#36c5c4;
+--cBandeiraDesconto:#202020;
+--cBandeiraDescontoTxt:#e3c03a;
+--cBandeiraFrete:#38761d;
+--cBandeiraFreteTxt:#ffffff;
+--cBp1:#2930a1;
+--cBp1Txt:#ffffff;
+--cBp2:#c12c2c;
+--cBp2Txt:#ffffff;
+--cBp3:#653239;
+--cBp3Txt:#af7a6d;
+--cVMarcas:#242424;
+--cVMarcasTxt:#ffffff;
+--cVVideo:#242424;
+--cVVideoTxt:#ffffff;
+--cVBlog:#1c1c1c;
+--cVBlogTxt:#ffffff;
+--cVBlogD:#181818;
+--cVDepoimentos:#242424;
+--cVDepoimentosTxt:#ffffff;
+--cNewsletter:#181818;
+--cNewsletterTxt:#ffffff;
+--cNewsletterCaixa:#ffffff;
+--cNewsletterCaixaTxt:#181818;
+--cRodape:#242424;
+--cRodapeTxt:#ffffff;
+--cRodapeRedes:#181818;
+--cRodapeRedesTxt:#36c5c4;
+--cRodapeInferior:#ffffff;
+--cRodapeInferiorTxt:#181818;
+--cLancamento:#c12c2c;
+--cDesc:#ffffff;
+--cDescTxt:#ffffff;
+}
+
+.vitrine-produtos {order:8}
+.vitrine-destaque {order:6}
+.vitrine-mas-vendido {order:2}
+.vitrine-lancamento {order:5}
+.vitrine-instagram {order:8}
+.vitrine-marcas {order:3}
+.vitrine-video {order:4}
+.vitrine-depoimentos {order:9}
+.vitrine-blog {order:7}
+
+.produto-descricao {order:1}
+.produto-comentarios {order:1}
+.produto-aproveite {order:4}
+.produto-comprejunto {order:2}
+
+.pagina-categoria .banner.vitrine {order:2}
+.pagina-categoria #listagemProdutos {order:4}
+.categoria-descricao {order:1}
+.categoria-newsletter {order:3}
+
+/* Fonte da loja*/
+body, input, select, .titulo, button, textarea, .pagina-pagina .caixa-sombreada p {font-family:Maven Pro};
+    
+</style>

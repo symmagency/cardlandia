@@ -91,7 +91,7 @@ window.THKEYS_CONFIG = {
   },
 
   trailer: {
-    vitrine: '.vitrine-22673250',
+    vitrine: '.vitrine-destaque',
     titulo: 'Ofertas em destaque',
     subtitulo: 'Jogos selecionados pela THKeys.',
     video: 'https://www.youtube.com/watch?v=cv041_93_0Q',
@@ -114,7 +114,7 @@ window.THKEYS_CONFIG = {
   },
 
   surpresa: {
-    produtoId: '398724436',
+    produtoId: '403976600',
     titulo: 'Ganhe <strong>1</strong> jogo surpresa para PC!',
     preco: 'R$ 19,90',
     imagem: 'https://symmagency.github.io/cardlandia/assets/jogo-surpresa.png',

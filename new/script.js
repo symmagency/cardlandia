@@ -270,9 +270,29 @@
     function initPriceFinder() {
       var $target = $('#miniBannerFullw .modulo.span4:first-child, .mini-banner .modulo.span4:first-child').first();
       if (!$target.length || $('#porPreco').length) return;
-      var items = C.porPreco.valores.map(function (v) { return '<li class="porpreco_item"><a href="./' + v + '"><span>R$</span> <strong>' + v + '</strong></a></li>'; });
+      var items = C.porPreco.valores.map(function (v) { 
+        return '<li class="porpreco_item"><a href="./' + v + '"><span>R$</span> <strong>' + v + '</strong></a></li>'; 
+      });
       var half = Math.ceil(items.length / 2);
-      $target.before('<div id="porPreco"><div class="titulo_porpreco"><h2>' + C.porPreco.titulo + '</h2><p>' + C.porPreco.subtitulo + '</p></div><div class="precos"><ul class="preco_linha">' + items.slice(0, half).join('') + '</ul><ul class="preco_linha">' + items.slice(half).join('') + '</ul></div></div>');
+      var porPrecoHTML = 
+        '<div id="porPreco">' +
+          '<div class="titulo_porpreco">' +
+            '<h2>' + C.porPreco.titulo + '</h2>' +
+            '<p>' + C.porPreco.subtitulo + '</p>' +
+          '</div>' +
+          '<div class="precos">' +
+            '<ul class="preco_linha">' + items.slice(0, half).join('') + '</ul>' +
+            '<ul class="preco_linha">' + items.slice(half).join('') + '</ul>' +
+          '</div>' +
+        '</div>';
+
+      // insere o HTML, depois move antes do .vitrine-mas-vendido
+      $target.before(porPrecoHTML);
+      var $porPreco = $('#porPreco');
+      var $masVendido = $('.vitrine-mas-vendido').first();
+      if ($porPreco.length && $masVendido.length) {
+        $porPreco.insertBefore($masVendido);
+      }
     }
 
     function cloneBestSellers() {
