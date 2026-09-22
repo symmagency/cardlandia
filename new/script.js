@@ -315,7 +315,7 @@
       if (!$cart.children('h3').length) $cart.prepend('<h3>Meu carrinho</h3>');
       var s = C.surpresa;
       if ($('tr[data-produto-id="' + s.produtoId + '"]').length || $cart.find('.surprise-box').length) return;
-      $cart.append('<div class="surprise-box"><div class="box-image"><img src="' + s.imagem + '" alt="Caixa surpresa para PC"></div><div class="box-text"><span>' + s.titulo + '</span><img src="' + s.plataforma + '" alt="Steam"></div><div class="append-price"><div class="box-price">' + s.preco + '</div><a class="box-button-add" href="./carrinho/produto/' + s.produtoId + '/adicionar"><img src="' + C.assets.base + 'icones/add-cart.svg" alt="Adicionar ao carrinho"></a></div></div>');
+      $cart.append('<div class="surprise-box"><div class="box-image"><img src="' + s.imagem + '" alt="Caixa surpresa para PC"></div><div class="box-text"><span>' + s.titulo + '</span><img src="' + s.plataforma + '" alt="Steam"></div><div class="append-price"><div class="box-price">' + s.preco + '</div><a class="box-button-add" href="https://www.cardlandia.com.br/carrinho/produto/' + s.produtoId + '/adicionar"><img src="' + C.assets.base + 'icones/add-cart.svg" alt="Adicionar ao carrinho"></a></div></div>');
       if ($('.embalagem').length) $('.surprise-box').before($('.embalagem'));
     }
 
