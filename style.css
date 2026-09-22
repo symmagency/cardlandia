@@ -68,6 +68,15 @@ button,
     --gradiente: linear-gradient(270deg, #00E4FB 0%, #767AB3 100%);
 }
 
+.trailer_play-trigger {
+    background: url(https://symmagency.github.io/cardlandia/assets/banners/bg-video.png) center no-repeat;
+    background-size: auto 100%;
+}
+
+.jogo_banner {
+    background: url(https://symmagency.github.io/cardlandia/assets/banners/bg-gta-video.png);
+}
+
 body {
     background: #1C1D20;
 }
