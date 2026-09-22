@@ -92,8 +92,8 @@ window.THKEYS_CONFIG = {
 
   trailer: {
     vitrine: '.vitrine-destaque',
-    titulo: 'Ofertas em destaque',
-    subtitulo: 'Jogos selecionados pela THKeys.',
+    titulo: 'Jogo em destaque',
+    subtitulo: 'Selecionado pela CardLândia',
     video: 'https://www.youtube.com/watch?v=cv041_93_0Q',
     preco: 'R$ 299,99',
     sufixo: 'no pix',
