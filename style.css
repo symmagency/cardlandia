@@ -7058,6 +7058,23 @@ div#avisoEnvio {
 }
 
 @media screen and (min-width: 768px) {
+
+    .conteiner-principal #rodape .conteiner > .row-fluid > div {
+        display: flex!important;
+        color: #fff;
+        font-size: 14px;
+    }
+    
+    .conteiner-principal #rodape .conteiner > .row-fluid > div:last-child {
+        justify-content: flex-end;
+    }
+    
+    a.symm {
+        width: 130px;
+        margin-right: 10px;
+        position: relative;
+        top: 2px;
+    }
     
     .tabela-carrinho .quantidade a, .tabela-carrinho .excluir a {
         font-size: 12px!important;
@@ -9099,4 +9116,8 @@ ul.slick-dots > li.slick-active > button {
     font-size: 16px;
     color: #fff;
     border-bottom: 1px solid #ffffff26;
+}
+
+li.categoria-id-6135195.borda-principal {
+    display: none !important;
 }
