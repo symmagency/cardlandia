@@ -983,13 +983,17 @@ ul.drop-login li:last-child {
 
 .menu.superior .nivel-dois {
     top: 100%;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
     box-shadow: 0 24px 40px -20px rgba(0, 0, 0, .3);
     border: 1px solid #ffffff10;
     background: #2E3036;
     border-radius: 5px;
+}
+
+.menu .nivel-tres {
+    background: #2f3037; 
+    border-radius: 5px;
+    border: 1px solid #ffffff26;
+    padding: 10px 0;
 }
 
 .menu-user-logged>a:after {
@@ -1055,6 +1059,11 @@ ul.drop-login li:last-child {
     padding: 0;
     width: 10px;
     line-height: 13px;
+}
+
+.menu.superior .nivel-dois li.com-filho a > i {
+    line-height: 32px;
+    top: 1px;
 }
 
 /* Banners */

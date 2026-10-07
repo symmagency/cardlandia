@@ -358,5 +358,6 @@
 
     $('.produto .conteiner-imagem>div:not(.produto-detalhe-info)').append($('.produto-thumbs.thumbs-horizontal'));
     $('.pagina-produto #abreZoom').remove();
+    $('.conteiner-principal #rodape .conteiner > .row-fluid > div:last-child').attr('style','');
   });
 })(jQuery, window, document);

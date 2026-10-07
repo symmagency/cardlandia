@@ -65,14 +65,14 @@ window.THKEYS_CONFIG = {
   },
 
   explorar: [
-    ['Ação', 'acao', '/acao'], ['Aventura', 'aventura', '/aventura'],
-    ['Co-op', 'coop', '/co-op'], ['Corrida', 'corrida', '/corrida'],
-    ['Esporte', 'esporte', '/esporte'], ['Estratégia', 'estrategia', '/estrategia'],
-    ['FPS', 'fps', '/fps'], ['Hack & Slash', 'slash', '/hack-slash'],
-    ['Indie', 'indie', '/indie'], ['Luta', 'luta', '/luta'],
-    ['MMO', 'mmo', '/mmo'], ['RPG', 'rpg', '/rpg'],
-    ['Simulação', 'simulacao', '/simulacao'], ['Soulslike', 'soulslike', '/soulslike'],
-    ['Terror', 'terror', '/terror']
+    ['Ação', 'acao', '/geral/acao'], ['Aventura', 'aventura', '/geral/aventura'],
+    ['Co-op', 'coop', '/geral/co-op'], ['Corrida', 'corrida', '/geral/corrida'],
+    ['Esporte', 'esporte', '/geral/esporte'], ['Estratégia', 'estrategia', '/geral/estrategia'],
+    ['FPS', 'fps', '/geral/fps'], ['Hack & Slash', 'slash', '/geral/hack-slash'],
+    ['Indie', 'indie', '/geral/indie'], ['Luta', 'luta', '/geral/luta'],
+    ['MMO', 'mmo', '/geral/mmo'], ['RPG', 'rpg', '/geral/rpg'],
+    ['Simulação', 'simulacao', '/geral/simulacao'], ['Soulslike', 'soulslike', '/geral/soulslike'],
+    ['Terror', 'terror', '/geral/terror']
   ],
 
   explorarPc: {
@@ -144,7 +144,7 @@ window.THKEYS_CONFIG = {
   rodape: {
     whatsapp: '(11) 5286-3976',
     whatsappLink: 'https://wa.me/551152863976',
-    blog: 'https://blog.thkeys.com.br/'
+    blog: '#'
   },
 
   surpresa: {
