@@ -142,8 +142,8 @@ window.THKEYS_CONFIG = {
   },
 
   rodape: {
-    whatsapp: '(11) 5286-3976',
-    whatsappLink: 'https://wa.me/551152863976',
+    whatsapp: 'Symm agency',
+    whatsappLink: 'https://symm.agency/',
     blog: '#'
   },
 
