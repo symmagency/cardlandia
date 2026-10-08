@@ -393,7 +393,7 @@ $(document).ready(function () {
 
     $('#rodape > div:last-child .row-fluid > div:last-child a img').attr('src', 'https://cdn.awsli.com.br/1041/1041512/arquivos/loja-integrada.svg');
     $('#rodape .span4.selos > ul > li:first-child img').attr('src', 'https://cdn.awsli.com.br/1041/1041512/arquivos/selo-protegido.png');
-    $('#rodape > div:last-child .row-fluid > div:last-child a').before('<a href="https://wa.me/551152863976" class="symm" target="_blank"><img src="https://cdn.awsli.com.br/1041/1041512/arquivos/desenvolvido-symm.svg" alt="Symm.agency" width="120px" height="35px"></a>');
+    $('#rodape > div:last-child .row-fluid > div:last-child a').before('<a href="https://symm.agency/" class="symm" target="_blank"><img src="https://cdn.awsli.com.br/1041/1041512/arquivos/desenvolvido-symm.svg" alt="Symm.agency" width="120px" height="35px"></a>');
     $('#rodape > div:last-child .row-fluid > div:first-child').removeClass('span9 span6 atendimento').addClass('assinatura').attr('style', '');
     $('#rodape > div:last-child .row-fluid > div:last-child').attr('style', '').addClass('assinatura-rodape');
 
