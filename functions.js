@@ -158,7 +158,7 @@ $(document).ready(function () {
 
         $(function () {
 
-            const promoImage = 'https://cdn.awsli.com.br/2727/2727537/arquivos/header_promo_bar.png';
+            const promoImage = 'https://cdn.awsli.com.br/22/22652/arquivos/header_promo_bar_v2.png';
             const promoLink = '#';
         
             $('#cabecalho').before(`
