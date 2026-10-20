@@ -2675,10 +2675,6 @@ div#blank-product-position1+.abas-custom:before {
     margin: 0;
 }
 
-.pagina-produto #carouselImagem li {
-    width: 100% !important;
-}
-
 .pagina-produto #corpo .produto>.row-fluid:nth-child(2)>.span6 {
     width: 100%;
     position: relative;
@@ -3214,10 +3210,6 @@ span.bandeira_promo_principal {
 
 .produto-compartilhar {
     display: none !important;
-}
-
-#carouselImagem .elastislide-carousel ul li a span img {
-    width: 100%;
 }
 
 .abas-custom .tab-content {
