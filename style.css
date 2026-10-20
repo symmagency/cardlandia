@@ -6723,6 +6723,22 @@ select {
         margin: 0;
     }
 
+    .explore_items {
+    cursor: grab;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: pan-x;
+    }
+    
+    .explore_items.is-dragging {
+    cursor: grabbing;
+    }
+    
+    .explore_items img,
+    .explore_items a {
+    -webkit-user-drag: none;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
