@@ -25,7 +25,7 @@ window.THKEYS_CONFIG = {
   },
 
   promocao: {
-    imagem: 'https://cdn.awsli.com.br/2727/2727537/arquivos/header_promo_bar.png',
+    imagem: 'https://cdn.awsli.com.br/22/22652/arquivos/header_promo_bar_v2.png',
     link: 'https://www.cardlandia.com.br/steam-card-prepago',
     alt: 'Promoção'
   },
