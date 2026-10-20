@@ -5260,7 +5260,7 @@ select {
         justify-content: center;
         align-items: center;
         padding: 0 16px;
-        max-height: 180px;
+        /* max-height: 180px; */
     }
 
     .produto .conteiner-imagem img {
@@ -7220,7 +7220,7 @@ div#avisoEnvio {
 
     .produto .conteiner-imagem>div,
     .pagina-produto .zm-viewer {
-        max-height: 183px;
+        /* max-height: 183px; */
         overflow: hidden;
         border-radius: 10px;
     }
@@ -7270,6 +7270,10 @@ div#avisoEnvio {
 }
 
 @media screen and (max-width: 768px) {
+
+    #carouselImagem {
+        margin-top: 20px;
+    }
 
     #explore_by-cat .row-fluid::-webkit-scrollbar {
         display: none;
